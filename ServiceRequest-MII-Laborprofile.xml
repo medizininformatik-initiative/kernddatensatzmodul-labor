@@ -5,7 +5,10 @@
   <title value="MI-Initiative - Laborprofile - ServiceRequest" />
   <status value="draft" />
   <experimental value="true" />
+  <publisher value="https://www.Medizininformatik-Initiative.de" />
+  <description value="Dieses Profil beschreibt eine Laboranforderung in der Medizininformatik-Initiative." />
   <purpose value="Dieses Profil beschreibt eine Laboranforderung in der Medizininformatik-Initiative." />
+  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -27,6 +30,7 @@
     </element>
     <element id="ServiceRequest.identifier">
       <path value="ServiceRequest.identifier" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.status">
@@ -55,16 +59,29 @@
       <path value="ServiceRequest.code" />
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.code.text">
+      <path value="ServiceRequest.code.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.subject.reference">
+      <path value="ServiceRequest.subject.reference" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.authoredOn">
       <path value="ServiceRequest.authoredOn" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.specimen">
       <path value="ServiceRequest.specimen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.specimen.reference">
+      <path value="ServiceRequest.specimen.reference" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.bodySite">
