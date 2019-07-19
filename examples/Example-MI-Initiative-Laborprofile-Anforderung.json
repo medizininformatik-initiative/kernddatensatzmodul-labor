@@ -1,0 +1,43 @@
+{
+  "resourceType": "ServiceRequest",
+  "meta": {
+    "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ServiceRequestLab"
+    ]
+  },
+  "id": "8989",
+  "status": "completed",
+  "intent": "original-order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "59826-8",
+          "display": "Creatinine [Moles/volume] in Blood"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "authoredOn": "2018-11-20T10:28:00+01:00",
+  "specimen": [
+    {
+      "reference": "Specimen/4999"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+        "http://mi-i.de/fhir/core/StructureDefinition/Oberservation-lab"
+    ]
+  },
+  "id": "4121",
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "18719-5",
+          "display": "Chemistry studies"
+        }
+      ]
+    },
+    {
+      "text": "Niere/Elektrolyte"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "59826-8",
+        "display": "Creatinine [Moles/volume] in Blood"
+      }
+    ],
+    "text": "Kreatinin"
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "encounter": {
+    "reference": "Encounter/555"
+  },
+  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "issued": "2018-03-11T10:28:00+01:00",
+  "performer": [
+    {
+      "reference": "Organization/7772",
+      "display": "Zentrallabor des IKCL"
+    }
+  ],
+  "valueQuantity": {
+    "value": 72,
+    "unit": "µmol/l",
+    "system": "http://unitsofmeasure.org",
+    "code": "umol/L"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "N"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 72.0
+      },
+      "high": {
+        "value": 127.0
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ]
+}
