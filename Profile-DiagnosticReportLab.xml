@@ -50,7 +50,6 @@
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding">
@@ -62,6 +61,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab">
       <path value="DiagnosticReport.category.coding" />
@@ -72,12 +73,33 @@
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.system">
       <path value="DiagnosticReport.category.coding.system" />
+      <min value="1" />
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.code">
       <path value="DiagnosticReport.category.coding.code" />
+      <min value="1" />
       <fixedCode value="26436-6" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
+      <path value="DiagnosticReport.category.coding" />
+      <sliceName value="diagnostic-service-sections" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
+      <path value="DiagnosticReport.category.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
+      <path value="DiagnosticReport.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="LAB" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code">
@@ -93,6 +115,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport">
@@ -104,11 +127,13 @@
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport.system">
       <path value="DiagnosticReport.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport.code">
       <path value="DiagnosticReport.code.coding.code" />
+      <min value="1" />
       <fixedCode value="11502-2" />
       <mustSupport value="true" />
     </element>
