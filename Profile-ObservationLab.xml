@@ -39,6 +39,7 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
@@ -49,20 +50,45 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation">
       <path value="Observation.category.coding" />
       <sliceName value="loinc-observation" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation.system">
       <path value="Observation.category.coding.system" />
+      <min value="1" />
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation.code">
       <path value="Observation.category.coding.code" />
+      <min value="1" />
       <fixedCode value="26436-6" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="observation-category" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
@@ -70,7 +96,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <description value="Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } } " />
+        <description value="Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }" />
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
       </binding>
     </element>
