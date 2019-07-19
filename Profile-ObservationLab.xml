@@ -39,13 +39,6 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="laboratory" />
-          <display value="Labor" />
-        </coding>
-      </fixedCodeableConcept>
     </element>
     <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
