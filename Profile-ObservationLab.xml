@@ -191,6 +191,18 @@
       <path value="Observation.hasMember" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.hasMember.reference">
+      <path value="Observation.hasMember.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.derivedFrom.reference">
+      <path value="Observation.derivedFrom.reference" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <max value="0" />
