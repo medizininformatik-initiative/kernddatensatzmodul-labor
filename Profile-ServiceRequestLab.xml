@@ -30,15 +30,66 @@
     </element>
     <element id="ServiceRequest.identifier">
       <path value="ServiceRequest.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.identifier.system">
+    <element id="ServiceRequest.identifier:anforderung">
+      <path value="ServiceRequest.identifier" />
+      <sliceName value="anforderung" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.type">
+      <path value="ServiceRequest.identifier.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.type.coding">
+      <path value="ServiceRequest.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.type.coding:placerv2">
+      <path value="ServiceRequest.identifier.type.coding" />
+      <sliceName value="placerv2" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.type.coding:placerv2.system">
+      <path value="ServiceRequest.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.type.coding:placerv2.code">
+      <path value="ServiceRequest.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="PLAC" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier:anforderung.system">
       <path value="ServiceRequest.identifier.system" />
       <min value="1" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/anforderung-lab-identifier" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.identifier.value">
+    <element id="ServiceRequest.identifier:anforderung.value">
       <path value="ServiceRequest.identifier.value" />
       <min value="1" />
       <mustSupport value="true" />
