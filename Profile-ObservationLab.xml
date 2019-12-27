@@ -83,7 +83,7 @@
     <element id="Observation.category.coding:observation-category.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-category" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:observation-category.code">
@@ -107,11 +107,20 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.reference">
+      <path value="Observation.performer.reference" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
@@ -162,8 +171,28 @@
       <path value="Observation.specimen.reference" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.device.reference">
+      <path value="Observation.device.reference" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.hasMember.reference">
+      <path value="Observation.hasMember.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.derivedFrom.reference">
+      <path value="Observation.derivedFrom.reference" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component">
