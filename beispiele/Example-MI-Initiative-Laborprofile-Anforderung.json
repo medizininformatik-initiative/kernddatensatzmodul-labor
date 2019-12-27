@@ -6,7 +6,7 @@
     ]
   },
   "status": "completed",
-  "intent": "original-order",
+  "intent": "order",
   "category": [
     {
       "coding": [
