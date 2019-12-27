@@ -45,7 +45,7 @@
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status" />
-      <fixedCode value="final" />
+      <fixedCode value="completed" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.intent">
