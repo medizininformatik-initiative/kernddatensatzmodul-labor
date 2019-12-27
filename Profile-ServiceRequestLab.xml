@@ -150,6 +150,11 @@
       <fixedCode value="laboratory" />
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
       <min value="1" />
