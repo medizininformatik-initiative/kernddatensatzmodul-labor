@@ -1,0 +1,10 @@
+{
+  "name": "kernddatensatzmodullabor",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz": "0.0.1"
+  },
+  "devDependencies": null,
+  "canonicals": null
+}
