@@ -104,10 +104,10 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.subject.reference">
-      <path value="Observation.subject.reference" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
@@ -129,33 +129,24 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
-      <sliceName value="valueQuantity" />
-      <min value="1" />
-      <type>
-        <code value="Quantity" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.valueQuantity.value" />
+    <element id="Observation.value[x].value">
+      <path value="Observation.value[x].value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.valueQuantity.unit" />
+    <element id="Observation.value[x].unit">
+      <path value="Observation.value[x].unit" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.valueQuantity.system" />
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
       <min value="1" />
       <fixedUri value="http://unitsofmeasure.org" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.valueQuantity.code" />
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -167,6 +158,10 @@
       <path value="Observation.bodySite" />
       <max value="0" />
     </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.specimen">
       <path value="Observation.specimen" />
       <mustSupport value="true" />
@@ -177,7 +172,7 @@
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Observation.device.reference">
       <path value="Observation.device.reference" />
@@ -185,22 +180,6 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.hasMember.reference">
-      <path value="Observation.hasMember.reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.derivedFrom">
-      <path value="Observation.derivedFrom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.derivedFrom.reference">
-      <path value="Observation.derivedFrom.reference" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component">
