@@ -17,22 +17,10 @@
           "display": "Laboratory"
         }
       ]
-    },
-    {
-      "coding": [
-        {
-          "system": "http://loinc.org",
-          "code": "59826-8",
-          "display": "Creatinine [Moles/volume] in Blood"
-        }
-      ]
     }
   ],
   "subject": {
     "reference": "Patient/111"
-  },
-  "encounter": {
-    "reference": "Encounter/555"
   },
   "authoredOn": "2018-11-20T10:28:00+01:00",
   "specimen": [
