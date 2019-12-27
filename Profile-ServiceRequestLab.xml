@@ -33,6 +33,16 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.identifier.system">
+      <path value="ServiceRequest.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.identifier.value">
+      <path value="ServiceRequest.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status" />
       <mustSupport value="true" />
@@ -46,29 +56,49 @@
       <path value="ServiceRequest.category" />
       <min value="1" />
       <max value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="laboratory" />
-          <display value="Laboratory" />
-        </coding>
-      </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category.coding">
+      <path value="ServiceRequest.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category.coding:laboratory">
+      <path value="ServiceRequest.category.coding" />
+      <sliceName value="laboratory" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category.coding:laboratory.system">
+      <path value="ServiceRequest.category.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category.coding:laboratory.code">
+      <path value="ServiceRequest.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.code.text">
-      <path value="ServiceRequest.code.text" />
-      <mustSupport value="true" />
-    </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.subject.reference">
-      <path value="ServiceRequest.subject.reference" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.authoredOn">
@@ -78,10 +108,10 @@
     </element>
     <element id="ServiceRequest.specimen">
       <path value="ServiceRequest.specimen" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.specimen.reference">
-      <path value="ServiceRequest.specimen.reference" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.bodySite">
