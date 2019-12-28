@@ -151,6 +151,10 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.note">
       <path value="Observation.note" />
       <mustSupport value="true" />
