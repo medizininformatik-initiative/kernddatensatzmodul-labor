@@ -179,10 +179,6 @@
       <path value="Observation.referenceRange" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.hasMember.reference">
-      <path value="Observation.hasMember.reference" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <max value="0" />
