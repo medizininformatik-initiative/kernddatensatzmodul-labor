@@ -185,14 +185,6 @@
       <path value="Observation.effective[x]" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.performer">
-      <path value="Observation.performer" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.performer.reference">
-      <path value="Observation.performer.reference" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <min value="1" />
