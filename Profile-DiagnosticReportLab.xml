@@ -34,12 +34,80 @@
     </element>
     <element id="DiagnosticReport.identifier">
       <path value="DiagnosticReport.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund">
+      <path value="DiagnosticReport.identifier" />
+      <sliceName value="befund" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.type">
+      <path value="DiagnosticReport.identifier.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.type.coding">
+      <path value="DiagnosticReport.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2">
+      <path value="DiagnosticReport.identifier.type.coding" />
+      <sliceName value="fillerV2" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2.system">
+      <path value="DiagnosticReport.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2.code">
+      <path value="DiagnosticReport.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="FILL" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.system">
+      <path value="DiagnosticReport.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.value">
+      <path value="DiagnosticReport.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.identifier:befund.assigner">
+      <path value="DiagnosticReport.identifier.assigner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -184,8 +252,10 @@
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
+      <min value="1" />
       <type>
         <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab" />
       </type>
       <mustSupport value="true" />
