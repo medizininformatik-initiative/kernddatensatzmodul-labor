@@ -234,14 +234,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.performer">
-      <path value="DiagnosticReport.performer" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.performer.reference">
-      <path value="DiagnosticReport.performer.reference" />
-      <mustSupport value="true" />
-    </element>
     <element id="DiagnosticReport.specimen">
       <path value="DiagnosticReport.specimen" />
       <mustSupport value="true" />
