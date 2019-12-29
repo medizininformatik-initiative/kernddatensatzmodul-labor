@@ -166,7 +166,7 @@
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
       <path value="DiagnosticReport.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0074" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
@@ -232,6 +232,14 @@
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer">
+      <path value="DiagnosticReport.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer.reference">
+      <path value="DiagnosticReport.performer.reference" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.specimen">
