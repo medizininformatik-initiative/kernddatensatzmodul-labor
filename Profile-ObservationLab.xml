@@ -30,6 +30,76 @@
     </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode">
+      <path value="Observation.identifier" />
+      <sliceName value="analyseBefundCode" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type">
+      <path value="Observation.identifier.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding">
+      <path value="Observation.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2">
+      <path value="Observation.identifier.type.coding" />
+      <sliceName value="observationInstanceV2" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system">
+      <path value="Observation.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code">
+      <path value="Observation.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="OBI" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.system">
+      <path value="Observation.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.value">
+      <path value="Observation.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.assigner">
+      <path value="Observation.identifier.assigner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
