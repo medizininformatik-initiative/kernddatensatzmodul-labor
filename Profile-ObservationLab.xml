@@ -183,6 +183,16 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <constraint>
+        <key value="mii-lab-1" />
+        <severity value="error" />
+        <human value="Datetime must be at least to day" />
+        <expression value="($this as dateTime).toString().length() &gt;= 8" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
