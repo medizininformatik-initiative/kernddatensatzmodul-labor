@@ -246,28 +246,8 @@
       <path value="Observation.specimen.reference" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <mustSupport value="false" />
-    </element>
-    <element id="Observation.device.reference">
-      <path value="Observation.device.reference" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.hasMember.reference">
-      <path value="Observation.hasMember.reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.derivedFrom">
-      <path value="Observation.derivedFrom" />
-      <mustSupport value="false" />
-    </element>
-    <element id="Observation.derivedFrom.reference">
-      <path value="Observation.derivedFrom.reference" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component">
