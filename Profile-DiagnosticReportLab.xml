@@ -213,6 +213,7 @@
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -242,12 +243,20 @@
       <path value="DiagnosticReport.performer.reference" />
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.performer.identifier">
+      <path value="DiagnosticReport.performer.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.specimen">
       <path value="DiagnosticReport.specimen" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.specimen.reference">
       <path value="DiagnosticReport.specimen.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.specimen.identifier">
+      <path value="DiagnosticReport.specimen.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
