@@ -223,6 +223,7 @@
     </element>
     <element id="Observation.value[x].code">
       <path value="Observation.value[x].code" />
+      <comment value="The mandatory system is UCUM." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
