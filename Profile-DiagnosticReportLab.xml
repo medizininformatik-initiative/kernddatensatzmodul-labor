@@ -221,6 +221,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.encounter">
+      <path value="DiagnosticReport.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Versorgungsfall" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]" />
       <definition value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können." />

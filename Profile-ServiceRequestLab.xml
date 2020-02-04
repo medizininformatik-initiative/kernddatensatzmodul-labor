@@ -166,6 +166,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.encounter">
+      <path value="ServiceRequest.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Versorgungsfall" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.authoredOn">
       <path value="ServiceRequest.authoredOn" />
       <min value="1" />
