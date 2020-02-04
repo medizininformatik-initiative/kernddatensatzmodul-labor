@@ -255,6 +255,10 @@
       <path value="Observation.specimen.identifier" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
       <mustSupport value="true" />
