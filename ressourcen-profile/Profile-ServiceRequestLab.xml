@@ -51,6 +51,12 @@
     <element id="ServiceRequest.identifier:anforderung.type">
       <path value="ServiceRequest.identifier.type" />
       <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <display value="PLAC" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.identifier:anforderung.type.coding">
