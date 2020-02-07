@@ -51,6 +51,12 @@
     <element id="Observation.identifier:analyseBefundCode.type">
       <path value="Observation.identifier.type" />
       <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="OBI" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.identifier:analyseBefundCode.type.coding">
