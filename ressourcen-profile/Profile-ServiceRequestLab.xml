@@ -54,7 +54,7 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-          <display value="PLAC" />
+          <code value="PLAC" />
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
