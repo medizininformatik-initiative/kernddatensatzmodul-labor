@@ -54,6 +54,12 @@
     <element id="DiagnosticReport.identifier:befund.type">
       <path value="DiagnosticReport.identifier.type" />
       <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="FILL" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type.coding">
