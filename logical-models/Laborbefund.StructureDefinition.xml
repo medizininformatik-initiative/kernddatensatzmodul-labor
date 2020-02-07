@@ -32,7 +32,7 @@
     </element>
     <element id="Laborbefund.Status">
       <path value="Laborbefund.Status" />
-      <short value="Status des Laborbefunds: " />
+      <short value="Status des Laborbefunds:" />
       <definition value="vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich)&#xD;&#xA;final (Endbefund, sollte nicht mehr geändert werden.)&#xD;&#xA;final korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem noch Änderungen vorgenommen werden.)" />
       <min value="0" />
       <max value="*" />
@@ -43,7 +43,7 @@
     </element>
     <element id="Laborbefund.Gültigkeitsdatum">
       <path value="Laborbefund.Gültigkeitsdatum" />
-      <short value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das &quot;Gültigkeitsdatum&quot; ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können. " />
+      <short value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das &quot;Gültigkeitsdatum&quot; ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -181,6 +181,7 @@
     </element>
     <element id="Laborbefund.Laboruntersuchung.Bereich.BezeichungDesLaborbereichs">
       <path value="Laborbefund.Laboruntersuchung.Bereich.BezeichungDesLaborbereichs" />
+      <short value="Textuelle Beschreibung des Laborbereichs" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -199,6 +200,7 @@
     </element>
     <element id="Laborbefund.Laboruntersuchung.Gruppe.KodeDerLaborgruppe">
       <path value="Laborbefund.Laboruntersuchung.Gruppe.KodeDerLaborgruppe" />
+      <short value="Kode der Laborgruppe" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -208,6 +210,7 @@
     </element>
     <element id="Laborbefund.Laboruntersuchung.Gruppe.BezeichnungDerLaborGruppe">
       <path value="Laborbefund.Laboruntersuchung.Gruppe.BezeichnungDerLaborGruppe" />
+      <short value="Textuelle Beschreibung der Laborgruppe" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -246,7 +249,7 @@
     </element>
     <element id="Laborbefund.Laboruntersuchung.Gültigkeitsdatum">
       <path value="Laborbefund.Laboruntersuchung.Gültigkeitsdatum" />
-      <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war) " />
+      <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war)" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -277,7 +280,7 @@
     <element id="Laborbefund.Laboruntersuchung.Interpretation">
       <path value="Laborbefund.Laboruntersuchung.Interpretation" />
       <short value="Interpretation des Messwerts (Kennzeichen)" />
-      <definition value="Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet. " />
+      <definition value="Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -379,7 +382,7 @@
     <element id="Laborbefund.Laboruntersuchung.Referenzbereich">
       <path value="Laborbefund.Laboruntersuchung.Referenzbereich" />
       <short value="Referenzbereich der Analyse." />
-      <definition value="Für einen Analyse sind mehrere Referenzbereiche möglich, ein Labor wird einem Patienten anhand von Merkmalen wie Alter und Geschlecht in der Regel aber nur einem Referenzbereich zuordnen. Dieser eine Referenzbereich sollte gespeichert werden. Referenzbereiche geben die Lage der zentralen 95% des Messwerts in einer gesunden Normalbevölkerung wieder. Referenzbereiche sind also  keine Entscheidungsgrenzen sondern können lediglich zur ersten Orientierung dienen. " />
+      <definition value="Für einen Analyse sind mehrere Referenzbereiche möglich, ein Labor wird einem Patienten anhand von Merkmalen wie Alter und Geschlecht in der Regel aber nur einem Referenzbereich zuordnen. Dieser eine Referenzbereich sollte gespeichert werden. Referenzbereiche geben die Lage der zentralen 95% des Messwerts in einer gesunden Normalbevölkerung wieder. Referenzbereiche sind also  keine Entscheidungsgrenzen sondern können lediglich zur ersten Orientierung dienen." />
       <min value="0" />
       <max value="*" />
       <type>
