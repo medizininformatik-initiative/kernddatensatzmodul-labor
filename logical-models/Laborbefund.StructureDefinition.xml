@@ -391,7 +391,7 @@
     </element>
     <element id="Laborbefund.Laboruntersuchung.Referenzbereich.Typ">
       <path value="Laborbefund.Laboruntersuchung.Referenzbereich.Typ" />
-      <short value="Typ des Referenzbereichs (immer Bezug auf Normbereich)" />
+      <short value="Typ des Referenzbereichs" />
       <min value="0" />
       <max value="*" />
       <type>
