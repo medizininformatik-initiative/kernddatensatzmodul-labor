@@ -109,6 +109,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
       <path value="Observation.status" />
       <mustSupport value="true" />
     </element>
@@ -180,7 +183,6 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -213,31 +215,87 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].value">
-      <path value="Observation.value[x].value" />
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.valueQuantity.value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].unit">
-      <path value="Observation.value[x].unit" />
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.valueQuantity.unit" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].system">
-      <path value="Observation.value[x].system" />
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.valueQuantity.system" />
       <min value="1" />
       <fixedUri value="http://unitsofmeasure.org" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.valueQuantity.code" />
       <comment value="The mandatory system is UCUM." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.valueCodeableConcept.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
