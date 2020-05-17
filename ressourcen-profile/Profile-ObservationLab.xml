@@ -125,8 +125,12 @@
       <path value="Observation.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="system" />
+        </discriminator>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -137,19 +141,18 @@
       <path value="Observation.category.coding" />
       <sliceName value="loinc-observation" />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
+      <patternUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:loinc-observation.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
-      <fixedCode value="26436-6" />
+      <patternCode value="26436-6" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:observation-category">
@@ -162,13 +165,13 @@
     <element id="Observation.category.coding:observation-category.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:observation-category.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
-      <fixedCode value="laboratory" />
+      <patternCode value="laboratory" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
