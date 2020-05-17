@@ -223,6 +223,12 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
