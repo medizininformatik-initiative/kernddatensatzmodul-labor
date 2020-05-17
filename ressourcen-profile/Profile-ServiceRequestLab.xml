@@ -92,7 +92,6 @@
     <element id="ServiceRequest.identifier:anforderung.system">
       <path value="ServiceRequest.identifier.system" />
       <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/anforderung-lab-identifier" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.identifier:anforderung.value">
