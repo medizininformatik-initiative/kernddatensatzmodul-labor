@@ -9,8 +9,7 @@
   <publisher value="https://www.Medizininformatik-Initiative.de" />
   <description value="Dieses Profil beschreibt eine Laborergebnis in der Medizininformatik-Initiative." />
   <purpose value="Dieses Profil beschreibt eine Laborergebnis in der Medizininformatik-Initiative." />
-  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />

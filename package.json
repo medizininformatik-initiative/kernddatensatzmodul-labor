@@ -1,9 +1,12 @@
 {
-  "name": "kernddatensatzmodullabor",
-  "version": "0.1.0",
+  "name": "de.medizininformatikinitiative.kerndatensatz.labor",
+  "version": "0.9.0",
   "description": "Put a description here",
+  "fhirVersions": [
+    "4.0.1"
+  ],
   "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz": "0.0.1"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.0"
   },
   "devDependencies": null,
   "canonicals": null
