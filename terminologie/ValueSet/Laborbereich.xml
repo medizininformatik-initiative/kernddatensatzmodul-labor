@@ -90,5 +90,12 @@
                 <display value="CYTOLOGY STUDIES"/>
             </concept>
         </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <concept>
+                <code value="GE"/>
+                <display value="Genetics"/>
+            </concept>
+        </include>
     </compose>
 </ValueSet>
