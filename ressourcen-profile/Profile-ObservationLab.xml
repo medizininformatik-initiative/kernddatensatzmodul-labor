@@ -216,6 +216,10 @@
       </constraint>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <slicing>
