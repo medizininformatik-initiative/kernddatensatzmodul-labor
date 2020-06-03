@@ -248,7 +248,7 @@
       </type>
     </element>
     <element id="Laborbefund.Laboruntersuchung.KlinischesBezugsdatum">
-      <path value="Laborbefund.Laboruntersuchung.Gültigkeitsdatum" />
+      <path value="Laborbefund.Laboruntersuchung.KlinischesBezugsdatum" />
       <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war)" />
       <min value="0" />
       <max value="*" />
