@@ -41,8 +41,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
     </element>
-    <element id="Laborbefund.Gültigkeitsdatum">
-      <path value="Laborbefund.Gültigkeitsdatum" />
+    <element id="Laborbefund.KlinischesBezugsdatum">
+      <path value="Laborbefund.KlinischesBezugsdatum" />
       <short value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das &quot;Gültigkeitsdatum&quot; ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können." />
       <min value="0" />
       <max value="*" />
@@ -140,6 +140,16 @@
         <code value="BackboneElement" />
       </type>
     </element>
+    <element id="Laborbefund.Laboruntersuchung.Code">
+      <path value="Laborbefund.Laboruntersuchung.Code" />
+      <short value="Code des Laborparameters (LOINC)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
     <element id="Laborbefund.Laboruntersuchung.Identifikation">
       <path value="Laborbefund.Laboruntersuchung.Identifikation" />
       <short value="Identifikator der Untersuchung" />
@@ -227,16 +237,6 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Laborbefund.Laboruntersuchung.Laborparameter.Code">
-      <path value="Laborbefund.Laboruntersuchung.Laborparameter.Code" />
-      <short value="Code des Laborparameters (LOINC)" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
-      </type>
-    </element>
     <element id="Laborbefund.Laboruntersuchung.Laborparameter.Bezeichnung">
       <path value="Laborbefund.Laboruntersuchung.Laborparameter.Bezeichnung" />
       <short value="Bezeichnung des Laborparameters" />
@@ -247,7 +247,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Laborbefund.Laboruntersuchung.Gültigkeitsdatum">
+    <element id="Laborbefund.Laboruntersuchung.KlinischesBezugsdatum">
       <path value="Laborbefund.Laboruntersuchung.Gültigkeitsdatum" />
       <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war)" />
       <min value="0" />
