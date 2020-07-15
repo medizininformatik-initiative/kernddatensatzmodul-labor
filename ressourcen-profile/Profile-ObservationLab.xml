@@ -330,9 +330,5 @@
       <path value="Observation.referenceRange" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component">
-      <path value="Observation.component" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>
