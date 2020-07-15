@@ -6,7 +6,7 @@
     <version value="0.9"/>
     <name value="Laborbereich"/>
     <title value="Medizininformatik-Initiative - Kerndatensatz Labor - Laborbereich"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false" />
     <publisher value="Medizininformatik-Initiative"/>
     <description value="Laboruntersuchungen werden in diagnostische Fachbereiche (untersuchende Fachbereiche) gruppiert." />
