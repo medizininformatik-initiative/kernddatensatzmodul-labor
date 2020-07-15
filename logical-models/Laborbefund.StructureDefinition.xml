@@ -110,9 +110,9 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
     </element>
-    <element id="Laborbefund.Probenmaterial.Herkunftsort">
-      <path value="Laborbefund.Probenmaterial.Herkunftsort" />
-      <short value="Ort am Patienten, an der die Probe entnommen / abgenommen wurde" />
+    <element id="Laborbefund.Probenmaterial.Koerperstelle">
+      <path value="Laborbefund.Probenmaterial.Koerperstelle" />
+      <short value="Lokalisation der Körperstelle am Patienten, an der die Probe entnommen / abgenommen wurde" />
       <min value="0" />
       <max value="*" />
       <type>
