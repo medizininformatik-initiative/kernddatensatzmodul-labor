@@ -4,7 +4,7 @@
   <version value="0.9" />
   <name value="ServiceRequestLab" />
   <title value="MI-Initiative - Laborprofile - ServiceRequest" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="true" />
   <publisher value="https://www.Medizininformatik-Initiative.de" />
   <description value="Dieses Profil beschreibt eine Laboranforderung in der Medizininformatik-Initiative." />
