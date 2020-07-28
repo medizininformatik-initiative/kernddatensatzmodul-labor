@@ -194,10 +194,6 @@
     </element>
     <element id="Observation.encounter">
       <path value="Observation.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Versorgungsfall" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
