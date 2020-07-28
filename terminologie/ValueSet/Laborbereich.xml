@@ -2,7 +2,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
-    <url value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Laborbereich"/>
+    <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"/>
     <version value="0.9"/>
     <name value="Laborbereich"/>
     <title value="Medizininformatik-Initiative - Kerndatensatz Labor - Laborbereich"/>
