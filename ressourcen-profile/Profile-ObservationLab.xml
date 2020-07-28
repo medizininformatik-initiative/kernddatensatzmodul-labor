@@ -234,7 +234,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
@@ -247,9 +247,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.valueQuantity.unit" />
       <min value="1" />
       <mustSupport value="true" />
@@ -267,7 +264,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
