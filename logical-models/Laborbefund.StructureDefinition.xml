@@ -289,6 +289,16 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
+    <element id="Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt">
+      <path value="Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt" />
+      <short value="Zeitpunkt des Beginns der Untersuchung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
     <element id="Laborbefund.Laboruntersuchung.Messwert">
       <path value="Laborbefund.Laboruntersuchung.Messwert" />
       <short value="Wert der Analyse" />
