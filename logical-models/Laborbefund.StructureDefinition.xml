@@ -258,27 +258,6 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Laborbefund.Laboruntersuchung.KlinischesBezugsdatum">
-      <path value="Laborbefund.Laboruntersuchung.KlinischesBezugsdatum" />
-      <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war)" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
-      </type>
-    </element>
-    <element id="Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt">
-      <path value="Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt" />
-      <short value="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war)" />
-      <comment value="In ArtDecor wird dieses Element zusammengefasst zu Klinisches/r Bezugsdatum/-zeitpunkt. Dieser Name kann jedoch nach geltenden Regeln von ElementDefinition.path nicht angebildet werden. Deshalb wurde das Element geteilt." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
-      </type>
-    </element>
     <element id="Laborbefund.Laboruntersuchung.Dokumentationsdatum">
       <path value="Laborbefund.Laboruntersuchung.Dokumentationsdatum" />
       <short value="Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde" />
