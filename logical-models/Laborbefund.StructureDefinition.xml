@@ -51,6 +51,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
+    <element id="Laborbefund.KlinischerBezugszeitpunkt">
+      <path value="Laborbefund.KlinischerBezugszeitpunkt" />
+      <short value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das &quot;Gültigkeitsdatum&quot; ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können." />
+      <comment value="In ArtDecor wird dieses Element zusammengefasst zu Klinisches/r Bezugsdatum/-zeitpunkt. Dieser Name kann jedoch nach geltenden Regeln von ElementDefinition.path nicht angebildet werden. Deshalb wurde das Element geteilt." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
     <element id="Laborbefund.Dokumentationsdatum">
       <path value="Laborbefund.Dokumentationsdatum" />
       <short value="Zeitpunkt, an dem der Laborbefund dokumentiert wurde." />
