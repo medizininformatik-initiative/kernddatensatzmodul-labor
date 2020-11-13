@@ -180,7 +180,7 @@
       <binding>
         <strength value="preferred" />
         <description value="Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips" />
       </binding>
     </element>
     <element id="Observation.subject">
