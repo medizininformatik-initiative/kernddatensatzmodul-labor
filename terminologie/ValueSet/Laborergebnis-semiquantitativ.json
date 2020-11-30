@@ -23,6 +23,10 @@
             "display": "Definitely not present"
           },
           {
+            "code": "260405006",
+            "display": "Trace"
+          },
+          {
             "code": "441614007",
             "display": "Present one plus out of three plus"
           },
