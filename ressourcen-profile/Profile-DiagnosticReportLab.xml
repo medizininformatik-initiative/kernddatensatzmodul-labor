@@ -5,7 +5,7 @@
   <name value="DiagnosticReportLab" />
   <title value="MI-Initiative - Laborprofile - DiagnosticReport" />
   <status value="active" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="https://www.Medizininformatik-Initiative.de" />
   <description value="Dieses Profil beschreibt einen Laborbefund in der Medizininformatik-Initiative." />
   <purpose value="Dieses Profil beschreibt einen Laborbefund in der Medizininformatik-Initiative." />
