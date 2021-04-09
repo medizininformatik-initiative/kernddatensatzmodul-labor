@@ -210,6 +210,25 @@
       </constraint>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.effective[x].extension">
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Observation.effective[x].extension:QuelleKlinischesBezugsdatum">
+      <path value="Observation.effective[x].extension" />
+      <sliceName value="QuelleKlinischesBezugsdatum" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.issued">
       <path value="Observation.issued" />
       <mustSupport value="true" />
