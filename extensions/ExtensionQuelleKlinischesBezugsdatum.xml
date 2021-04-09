@@ -16,8 +16,8 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
-    <type value="element" />
-    <expression value="Observation.effectiveDateTime" />
+    <type value="fhirpath" />
+    <expression value="Observation.effective.ofType(dateTime)" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
