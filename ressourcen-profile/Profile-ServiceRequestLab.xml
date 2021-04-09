@@ -159,6 +159,10 @@
       <path value="ServiceRequest.code" />
       <min value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes" />
+      </binding>
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
