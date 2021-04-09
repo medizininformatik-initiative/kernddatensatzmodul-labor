@@ -7,16 +7,15 @@
   },
   "identifier": [
     {
-      "type": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-              "code": "FILL"
-            }
-          ]
-        }
-      ],
+      "type":
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL"
+          }
+        ]
+      },
       "system": "https://diz.mii.de/fhir/core/NamingSystem/test-befund",
       "value":"0987654321",
       "assigner":{
@@ -27,9 +26,9 @@
       }
     }
   ],
-  "basedOn": {
+  "basedOn": [{
     "reference": "ServiceRequest/111"
-  },
+  }],
   "status": "final",
   "category": [
     {
