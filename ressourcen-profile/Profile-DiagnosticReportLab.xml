@@ -165,18 +165,6 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
-      <path value="DiagnosticReport.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0074" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
-      <path value="DiagnosticReport.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="LAB" />
-      <mustSupport value="true" />
-    </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
       <mustSupport value="true" />
