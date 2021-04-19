@@ -135,8 +135,8 @@
       <path value="DiagnosticReport.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -148,18 +148,10 @@
       <sliceName value="loinc-lab" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.category.coding:loinc-lab.system">
-      <path value="DiagnosticReport.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.category.coding:loinc-lab.code">
-      <path value="DiagnosticReport.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="26436-6" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="26436-6" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
@@ -167,6 +159,10 @@
       <sliceName value="diagnostic-service-sections" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+        <code value="LAB" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
@@ -189,8 +185,8 @@
       <path value="DiagnosticReport.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -202,24 +198,15 @@
       <sliceName value="loinc-labReport" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.code.coding:loinc-labReport.system">
-      <path value="DiagnosticReport.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://loinc.org" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.code.coding:loinc-labReport.code">
-      <path value="DiagnosticReport.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="11502-2" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="11502-2" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
