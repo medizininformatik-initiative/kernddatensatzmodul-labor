@@ -46,6 +46,10 @@
           {
             "code": "52101004",
             "display": "Present (qualifier value)"
+          },
+          {
+            "code": "410594000",
+            "display": "Definitely not present"
           }
         ]
       },
