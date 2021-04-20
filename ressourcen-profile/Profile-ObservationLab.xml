@@ -21,6 +21,10 @@
       <path value="Observation.id" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.meta.source">
       <path value="Observation.meta.source" />
       <mustSupport value="true" />
@@ -110,9 +114,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
-        <valueString value="default: final" />
-      </extension>
       <path value="Observation.status" />
       <mustSupport value="true" />
     </element>
@@ -126,11 +127,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -141,18 +138,10 @@
       <path value="Observation.category.coding" />
       <sliceName value="loinc-observation" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:loinc-observation.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:loinc-observation.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <patternCode value="26436-6" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="26436-6" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:observation-category">
@@ -160,18 +149,10 @@
       <sliceName value="observation-category" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:observation-category.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <patternUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:observation-category.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <patternCode value="laboratory" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="laboratory" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
@@ -215,10 +196,10 @@
       <path value="Observation.effective[x].extension" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="url"/>
+          <type value="value" />
+          <path value="url" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Observation.effective[x].extension:QuelleKlinischesBezugsdatum">
