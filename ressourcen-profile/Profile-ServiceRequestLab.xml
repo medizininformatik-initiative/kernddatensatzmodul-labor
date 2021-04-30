@@ -21,6 +21,10 @@
       <path value="ServiceRequest.id" />
       <mustSupport value="true" />
     </element>
+    <element id="ServiceRequest.meta">
+      <path value="ServiceRequest.meta" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.meta.source">
       <path value="ServiceRequest.meta.source" />
       <mustSupport value="true" />
@@ -129,8 +133,8 @@
       <path value="ServiceRequest.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -142,18 +146,10 @@
       <sliceName value="laboratory" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.category.coding:laboratory.system">
-      <path value="ServiceRequest.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ServiceRequest.category.coding:laboratory.code">
-      <path value="ServiceRequest.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="laboratory" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="laboratory" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.code">
@@ -168,7 +164,6 @@
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />

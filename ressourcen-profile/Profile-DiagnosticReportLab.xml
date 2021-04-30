@@ -23,7 +23,7 @@
     </element>
     <element id="DiagnosticReport.meta">
       <path value="DiagnosticReport.meta" />
-      <mustSupport value="false" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.meta.source">
       <path value="DiagnosticReport.meta.source" />
