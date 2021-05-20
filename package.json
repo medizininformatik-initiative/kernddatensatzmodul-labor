@@ -6,7 +6,8 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.0"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.0",
+    "hl7.fhir.uv.ips": "1.0.0"
   },
   "devDependencies": null,
   "canonicals": null
