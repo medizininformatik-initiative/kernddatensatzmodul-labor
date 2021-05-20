@@ -17,9 +17,6 @@
       <short value="Das Basismodul Laborbefunde enthält strukturierte Informationen zu Laboruntersuchungen als komplexe diagnostische Maßnahmen." />
       <min value="0" />
       <max value="*" />
-      <type>
-        <code value="Element" />
-      </type>
     </element>
     <element id="Laborbefund.Identifikation">
       <path value="Laborbefund.Identifikation" />
