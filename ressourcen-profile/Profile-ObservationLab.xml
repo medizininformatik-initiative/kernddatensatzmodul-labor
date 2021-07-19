@@ -17,6 +17,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="mii-lab-2" />
+        <severity value="error" />
+        <human value="Falls kein Laborwert verfügbar ist, muss eine dataAbsentReason angegeben werden" />
+        <expression value="value.exists().not() implies dataAbsentReason.exists()" />
+      </constraint>
+    </element>
     <element id="Observation.id">
       <path value="Observation.id" />
       <mustSupport value="true" />
