@@ -17,11 +17,11 @@
           }
         ]
       },
-      "system": "https://diz.mii.de/fhir/core/NamingSystem/test-befund",
+      "system": "https://example.org/fhir/sid/test-befund",
       "value":"0987654321",
       "assigner":{
         "identifier":{
-          "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/org-identifier",
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
           "value": "DIZ-ID"
         }
       }

@@ -16,11 +16,11 @@
           }
         ]
       },
-      "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/anforderung-lab-identifier",
+      "system": "https://example.org/fhir/sid/anforderung-lab-identifier",
       "value":"1234567890",
       "assigner":{
         "identifier":{
-          "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/org-identifier",
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
           "value": "DIZ-ID"
         }
       }
