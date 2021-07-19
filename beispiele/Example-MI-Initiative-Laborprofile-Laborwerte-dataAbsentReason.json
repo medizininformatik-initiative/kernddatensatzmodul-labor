@@ -85,7 +85,7 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "value": "unknown"
+        "code": "unknown"
       }
     ]
   },
