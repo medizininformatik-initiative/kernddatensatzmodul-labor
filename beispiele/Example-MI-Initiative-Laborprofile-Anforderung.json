@@ -41,7 +41,7 @@
   "code":{
     "coding":[
       {
-        "system": "http://diz.mii.de/fhir/CodeSystem/LabTests",
+        "system": "http://example.org/fhir/CodeSystem/LabTests",
         "code": "GroßesBlutbild"
       }
     ]

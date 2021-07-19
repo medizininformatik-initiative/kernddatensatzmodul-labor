@@ -41,7 +41,7 @@
           "display": "Laboratory studies (set)"
         },
         {
-          "system": "http://diz.mii.de",
+          "system": "http://exmple.org/fhir/sid/Laborgruppe",
           "code": "Niere/Elektrolyte" 
         }
       ]
