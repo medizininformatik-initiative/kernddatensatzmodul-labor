@@ -226,7 +226,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
@@ -286,6 +285,10 @@
     <element id="Observation.value[x]:valueCodeableConcept.coding.code">
       <path value="Observation.value[x].coding.code" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.interpretation">
