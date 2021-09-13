@@ -242,10 +242,10 @@
         <code value="CodeableConcept" />
       </type>
       <type>
-        <code value="Ratio" />
+        <code value="Range" />
       </type>
       <type>
-        <code value="string" />
+        <code value="Ratio" />
       </type>
       <mustSupport value="true" />
     </element>
