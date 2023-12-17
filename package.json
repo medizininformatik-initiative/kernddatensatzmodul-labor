@@ -1,14 +1,34 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.labor",
-  "version": "1.0.4",
-  "description": "Put a description here",
+  "version": "2024.0.0-ballot",
+  "description": "Medizininformatik Initiative - Modul Labor",
+  "author": "juliansass",
   "fhirVersions": [
     "4.0.1"
   ],
+  "keywords": [
+    "MII",
+    "KDS",
+    "Labor",
+    "Laboratory"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://www.medizininformatik-initiative.de/",
+  "directories" : {
+    "lib" : "package",
+    "example" : "examples"
+  },
+  "title": "MII IG Labor",
+  "maintainers" : [
+    {
+      "name" : "Medizininformatik Initiative",
+      "url" : "https://www.medizininformatik-initiative.de/"
+    }
+  ],
+  "canonicals": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor-de-v2024",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
   "dependencies": {
     "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
     "hl7.fhir.uv.ips": "1.0.0"
-  },
-  "devDependencies": null,
-  "canonicals": null
+  }
 }
