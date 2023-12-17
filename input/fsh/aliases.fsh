@@ -9,3 +9,5 @@ Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-r
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $ResultsLabObservationUvIps = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 Alias: $pq-translation-ex = http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation
+Alias: $quantity-precision-ex = http://hl7.org/fhir/StructureDefinition/quantity-precision
+Alias: $standard-status-ex = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status

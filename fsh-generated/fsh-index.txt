@@ -1,13 +1,13 @@
 Output File                                                          Name                                        Type       FSH File                                                   Lines
 DiagnosticReport-mii-exa-labor-laborbefund.json                      mii-exa-labor-laborbefund                   Instance   instances/mii-exa-labor-laborbefund.fsh                    1 - 17
 Observation-mii-exa-labor-laborwert-data-absent-reason.json          mii-exa-labor-laborwert-data-absent-reason  Instance   instances/mii-exa-labor-laborwert-data-absent-reason.fsh   1 - 27
-Observation-mii-exa-labor-laborwert.json                             mii-exa-labor-laborwert                     Instance   instances/mii-exa-labor-laborwert.fsh                      1 - 29
+Observation-mii-exa-labor-laborwert.json                             mii-exa-labor-laborwert                     Instance   instances/mii-exa-labor-laborwert.fsh                      1 - 30
 ServiceRequest-mii-exa-labor-laboranforderung.json                   mii-exa-labor-laboranforderung              Instance   instances/mii-exa-labor-laboranforderung.fsh               1 - 15
 StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.json  MII_EX_Labor_Quelle_Klinisches_Bezugsdatum  Extension  extensions/MII_EX_Labor_Quelle_Klinisches_Bezugsdatum.fsh  1 - 14
 StructureDefinition-mii-lm-labor.json                                MII_LM_Labor                                Logical    logicals/MII_LM_Labor.fsh                                  1 - 65
 StructureDefinition-mii-pr-labor-laboranforderung.json               MII_PR_Labor_Laboranforderung               Profile    profiles/MII_PR_Labor_Laboranforderung.fsh                 1 - 56
 StructureDefinition-mii-pr-labor-laborbefund.json                    MII_PR_Labor_Laborbefund                    Profile    profiles/MII_PR_Labor_Laborbefund.fsh                      1 - 71
-StructureDefinition-mii-pr-labor-laboruntersuchung.json              MII_PR_Labor_Laboruntersuchung              Profile    profiles/MII_PR_Labor_Laboruntersuchung.fsh                1 - 82
+StructureDefinition-mii-pr-labor-laboruntersuchung.json              MII_PR_Labor_Laboruntersuchung              Profile    profiles/MII_PR_Labor_Laboruntersuchung.fsh                1 - 87
 ValueSet-mii-vs-labor-laborbereich.json                              MII_VS_Labor_Laborbereich                   ValueSet   valuesets/MII_VS_Labor_Laborbereich.fsh                    1 - 31
 ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json             MII_VS_Labor_Laborergbenis_Semiquantitativ  ValueSet   valuesets/MII_VS_Labor_Laborergebnis_Semiquantitativ.fsh   1 - 20
 ValueSet-mii-vs-labor-laborergebnis-qualitativ.json                  MII_VS_Labor_Laborergebnis_Qualitativ       ValueSet   valuesets/MII_VS_Labor_Laborergebnis_Qualitativ.fsh        1 - 20

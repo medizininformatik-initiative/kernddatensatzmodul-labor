@@ -365,6 +365,16 @@
       },
       {
         "id": "Observation.value[x]:valueQuantity.extension:pqTranslation",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "draft"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Observation.value[x].extension",
         "sliceName": "pqTranslation",
         "min": 0,
@@ -382,6 +392,32 @@
         "id": "Observation.value[x]:valueQuantity.value",
         "path": "Observation.value[x].value",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value.extension:quantityPrecision",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "draft"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Observation.value[x].value.extension",
+        "sliceName": "quantityPrecision",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

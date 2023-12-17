@@ -60,6 +60,14 @@
       }
     ],
     "value": 72,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 1
+        }
+      ]
+    },
     "code": "umol/L",
     "unit": "µmol/l"
   },

@@ -60,7 +60,12 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * value[x] MS
 * valueQuantity MS
 * valueQuantity.extension contains $pq-translation-ex named pqTranslation 0..*
+* valueQuantity.extension[pqTranslation] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* valueQuantity.extension[pqTranslation] ^extension[=].valueCode = #draft
 * valueQuantity.value 1.. MS
+* valueQuantity.value.extension contains $quantity-precision-ex named quantityPrecision 0..1 MS
+* valueQuantity.value.extension[quantityPrecision] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* valueQuantity.value.extension[quantityPrecision] ^extension[=].valueCode = #draft
 * valueQuantity.unit 1.. MS
 * valueQuantity.system 1.. MS
 * valueQuantity.system = "http://unitsofmeasure.org" (exactly)
