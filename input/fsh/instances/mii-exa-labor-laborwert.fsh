@@ -21,6 +21,8 @@ Usage: #example
 * performer.reference = "Organization/7772"
 * performer.display = "Zentrallabor des IKCL"
 * valueQuantity = 72 'umol/L' "µmol/l"
+* valueQuantity.extension[pqTranslation].url = "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation"
+* valueQuantity.extension[pqTranslation].valueQuantity = 0.81 'mg/dL' "mg/dL"
 * interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low.value = 72
 * referenceRange.high.value = 127

@@ -364,6 +364,21 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.value[x]:valueQuantity.extension:pqTranslation",
+        "path": "Observation.value[x].extension",
+        "sliceName": "pqTranslation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.value[x]:valueQuantity.value",
         "path": "Observation.value[x].value",
         "min": 1,

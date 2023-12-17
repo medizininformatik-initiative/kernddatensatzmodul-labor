@@ -58,6 +58,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] MS
 * valueQuantity MS
+* valueQuantity.extension contains $pq-translation-ex named pqTranslation 0..*
 * valueQuantity.value 1.. MS
 * valueQuantity.unit 1.. MS
 * valueQuantity.system 1.. MS

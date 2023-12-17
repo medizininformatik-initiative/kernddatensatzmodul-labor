@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "instances/mii-exa-labor-laborwert.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 29
   },
   {
     "outputFile": "ServiceRequest-mii-exa-labor-laboranforderung.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/MII_PR_Labor_Laboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 80
+    "endLine": 81
   },
   {
     "outputFile": "ValueSet-mii-vs-labor-laborbereich.json",

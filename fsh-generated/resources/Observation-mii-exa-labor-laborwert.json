@@ -48,6 +48,17 @@
   ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+        "valueQuantity": {
+          "value": 0.81,
+          "code": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL"
+        }
+      }
+    ],
     "value": 72,
     "code": "umol/L",
     "unit": "µmol/l"

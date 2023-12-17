@@ -8,3 +8,4 @@ Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/reference
 Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $ResultsLabObservationUvIps = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
+Alias: $pq-translation-ex = http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation
