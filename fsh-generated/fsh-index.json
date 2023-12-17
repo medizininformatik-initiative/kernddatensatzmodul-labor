@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/MII_PR_Labor_Laboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 82
   },
   {
     "outputFile": "ValueSet-mii-vs-labor-laborbereich.json",

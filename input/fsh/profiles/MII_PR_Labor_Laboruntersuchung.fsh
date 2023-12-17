@@ -53,7 +53,8 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * effective[x] 1.. MS
 * effective[x] only dateTime
 * effective[x] obeys mii-lab-1
-* effectiveDateTime.extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
+//* effectiveDateTime.extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
+* effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * issued MS
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] MS
