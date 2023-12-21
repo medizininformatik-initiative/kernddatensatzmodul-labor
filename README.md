@@ -1,4 +1,4 @@
-## Medizininformatik Initiative - Kerndatensatz - Modul Prozedur
+## Medizininformatik Initiative - Kerndatensatz - Modul Labor
 
 ### Übersicht
 
