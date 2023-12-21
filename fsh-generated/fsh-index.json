@@ -1,0 +1,114 @@
+[
+  {
+    "outputFile": "DiagnosticReport-mii-exa-labor-laborbefund.json",
+    "fshName": "mii-exa-labor-laborbefund",
+    "fshType": "Instance",
+    "fshFile": "instances/mii-exa-labor-laborbefund.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-mii-exa-labor-laborwert-data-absent-reason.json",
+    "fshName": "mii-exa-labor-laborwert-data-absent-reason",
+    "fshType": "Instance",
+    "fshFile": "instances/mii-exa-labor-laborwert-data-absent-reason.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Observation-mii-exa-labor-laborwert.json",
+    "fshName": "mii-exa-labor-laborwert",
+    "fshType": "Instance",
+    "fshFile": "instances/mii-exa-labor-laborwert.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-labor-laboranforderung.json",
+    "fshName": "mii-exa-labor-laboranforderung",
+    "fshType": "Instance",
+    "fshFile": "instances/mii-exa-labor-laboranforderung.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.json",
+    "fshName": "MII_EX_Labor_Quelle_Klinisches_Bezugsdatum",
+    "fshType": "Extension",
+    "fshFile": "extensions/MII_EX_Labor_Quelle_Klinisches_Bezugsdatum.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-mii-lm-labor.json",
+    "fshName": "MII_LM_Labor",
+    "fshType": "Logical",
+    "fshFile": "logicals/MII_LM_Labor.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-labor-laboranforderung.json",
+    "fshName": "MII_PR_Labor_Laboranforderung",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Labor_Laboranforderung.fsh",
+    "startLine": 1,
+    "endLine": 56
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-labor-laborbefund.json",
+    "fshName": "MII_PR_Labor_Laborbefund",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Labor_Laborbefund.fsh",
+    "startLine": 1,
+    "endLine": 71
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-labor-laboruntersuchung.json",
+    "fshName": "MII_PR_Labor_Laboruntersuchung",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Labor_Laboruntersuchung.fsh",
+    "startLine": 1,
+    "endLine": 87
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-labor-laborbereich.json",
+    "fshName": "MII_VS_Labor_Laborbereich",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Labor_Laborbereich.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json",
+    "fshName": "MII_VS_Labor_Laborergbenis_Semiquantitativ",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Labor_Laborergebnis_Semiquantitativ.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-labor-laborergebnis-qualitativ.json",
+    "fshName": "MII_VS_Labor_Laborergebnis_Qualitativ",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Labor_Laborergebnis_Qualitativ.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-labor-order-codes.json",
+    "fshName": "MII_VS_Labor_Order_Codes",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Labor_Order_Codes.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.json",
+    "fshName": "MII_VS_Labor_Quelle_Klinisches_Bezugsdatum",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Labor_Quelle_Klinisches_Bezugsdatum.fsh",
+    "startLine": 1,
+    "endLine": 12
+  }
+]

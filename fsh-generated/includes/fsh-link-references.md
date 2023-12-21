@@ -1,0 +1,14 @@
+[MII_EX_Labor_Quelle_Klinisches_Bezugsdatum]: StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.html
+[MII_LM_Labor]: StructureDefinition-mii-lm-labor.html
+[MII_PR_Labor_Laboranforderung]: StructureDefinition-mii-pr-labor-laboranforderung.html
+[MII_PR_Labor_Laborbefund]: StructureDefinition-mii-pr-labor-laborbefund.html
+[MII_PR_Labor_Laboruntersuchung]: StructureDefinition-mii-pr-labor-laboruntersuchung.html
+[MII_VS_Labor_Laborbereich]: ValueSet-mii-vs-labor-laborbereich.html
+[MII_VS_Labor_Laborergbenis_Semiquantitativ]: ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html
+[MII_VS_Labor_Laborergebnis_Qualitativ]: ValueSet-mii-vs-labor-laborergebnis-qualitativ.html
+[MII_VS_Labor_Order_Codes]: ValueSet-mii-vs-labor-order-codes.html
+[MII_VS_Labor_Quelle_Klinisches_Bezugsdatum]: ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html
+[mii-exa-labor-laboranforderung]: ServiceRequest-mii-exa-labor-laboranforderung.html
+[mii-exa-labor-laborbefund]: DiagnosticReport-mii-exa-labor-laborbefund.html
+[mii-exa-labor-laborwert]: Observation-mii-exa-labor-laborwert.html
+[mii-exa-labor-laborwert-data-absent-reason]: Observation-mii-exa-labor-laborwert-data-absent-reason.html
