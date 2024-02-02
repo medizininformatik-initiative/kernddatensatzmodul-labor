@@ -24,27 +24,7 @@ select
 <tabs>
   <tab title="Darstellung">{{tree, buttons}}</tab>
   <tab title="Beschreibung"> 
-        @```
-        from
-	        StructureDefinition
-        where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab'
-        select
-	        Beschreibung: description
-        with
-            no header
-        ```
-        @```
-        from 
-            StructureDefinition 
-        where 
-            url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab'
-        for 
-            differential.element 
-            where 
-                mustSupport = true 
-            select Feldname: id, Kurzbeschreibung: short, Hinweise: comment
-        ```
+    {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Beschreibung.page.md}}
   </tab>
   <tab title="XML">{{xml}}</tab>
   <tab title="JSON">{{json}}</tab>
@@ -52,6 +32,31 @@ select
 </tabs>
 
 <br>
+
+### Constraints/Invarianten
+<fql headers="true">
+from StructureDefinition where url = %canonical for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+</fql>
+
+### RestFul API
+
+<tabs>
+    <tab title="Interaktionen"> 
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-REST.page.md}}
+    </tab>
+    <tab title="Suchparameter">
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Search.page.md}}
+    </tab>
+    <tab title="Operationen">
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Operations.page.md}}
+    </tab>
+    <tab title="Link">
+    <!-- Achtung: Link muss noch händisch gesetzt werden, hier funktioniert der Platzhalter %capability nicht!-->
+        {{link:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata}}
+    </tab>
+</tabs>
+
+### Mappings
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -85,6 +90,6 @@ select
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modullabor/DiagnosticReport-example}}
+{{json:mii-exa-labor-laborbefund}}
 
 

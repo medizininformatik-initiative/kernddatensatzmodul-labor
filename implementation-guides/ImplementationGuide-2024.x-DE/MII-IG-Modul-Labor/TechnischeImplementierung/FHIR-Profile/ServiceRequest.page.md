@@ -1,18 +1,62 @@
 ---
-topic: ServiceRequest-duplicate-2
+canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+capability: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata
+resType: ServiceRequest
+expand: 1
 ---
-### ServiceRequestLab
+## {{link}}
 
 Der ServiceRequestLab bildet den Auftrag für eine Laboruntersuchung ab.
 
-Canonical: 
-```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab```
+### Metadaten
 
-**Differential**
+<fql output="table" headers="true">
+from
+	StructureDefinition
+where
+	url = %canonical
+select
+	Canonical: url, Status: status, Version: version, Basis: baseDefinition
+</fql>
 
-{{tree:medizininformatikinitiative-modullabor/servicerequestlab, diff}}
+### Inhalt
+
+<tabs>
+  <tab title="Darstellung">{{tree, buttons}}</tab>
+  <tab title="Beschreibung"> 
+    {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Beschreibung.page.md}}
+  </tab>
+  <tab title="XML">{{xml}}</tab>
+  <tab title="JSON">{{json}}</tab>
+  <tab title="Link">{{link}}</tab>
+</tabs>
 
 <br>
+
+### Constraints/Invarianten
+<fql headers="true">
+from StructureDefinition where url = %canonical for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+</fql>
+
+### RestFul API
+
+<tabs>
+    <tab title="Interaktionen"> 
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-REST.page.md}}
+    </tab>
+    <tab title="Suchparameter">
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Search.page.md}}
+    </tab>
+    <tab title="Operationen">
+        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Operations.page.md}}
+    </tab>
+    <tab title="Link">
+    <!-- Achtung: Link muss noch händisch gesetzt werden, hier funktioniert der Platzhalter %capability nicht!-->
+        {{link:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata}}
+    </tab>
+</tabs>
+
+### Mappings
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -39,16 +83,9 @@ Canonical:
 
 ---
 
-**Snapshot**
-
-{{tree:medizininformatikinitiative-modullabor/servicerequestlab, snapshot}}
-
-
----
-
 **Beispiele**
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modullabor/ServiceRequest-example}}
+{{json:fsh-generated/resources/ServiceRequest-mii-exa-labor-laboranforderung.json}}
 
