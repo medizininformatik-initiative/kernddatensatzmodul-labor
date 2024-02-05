@@ -19,6 +19,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier ^slicing.rules = #open
 * identifier contains analyseBefundCode 1..1 MS
 * identifier[analyseBefundCode].type 1.. MS
+* identifier[analyseBefundCode].type from mii-vs-labor-identifier-type-codes (extensible)
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].type.coding MS
 * identifier[analyseBefundCode].type.coding ^slicing.discriminator.type = #value
