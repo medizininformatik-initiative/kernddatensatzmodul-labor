@@ -3,6 +3,7 @@
 [MII_PR_Labor_Laboranforderung]: StructureDefinition-mii-pr-labor-laboranforderung.html
 [MII_PR_Labor_Laborbefund]: StructureDefinition-mii-pr-labor-laborbefund.html
 [MII_PR_Labor_Laboruntersuchung]: StructureDefinition-mii-pr-labor-laboruntersuchung.html
+[MII_VS_Labor_Identifier_Type_Codes]: ValueSet-mii-vs-labor-identifier-type-codes.html
 [MII_VS_Labor_Laborbereich]: ValueSet-mii-vs-labor-laborbereich.html
 [MII_VS_Labor_Laborergbenis_Semiquantitativ]: ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html
 [MII_VS_Labor_Laborergebnis_Qualitativ]: ValueSet-mii-vs-labor-laborergebnis-qualitativ.html

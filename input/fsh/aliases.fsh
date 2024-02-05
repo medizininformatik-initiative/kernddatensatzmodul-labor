@@ -11,3 +11,4 @@ Alias: $ResultsLabObservationUvIps = http://hl7.org/fhir/uv/ips/ValueSet/results
 Alias: $pq-translation-ex = http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation
 Alias: $quantity-precision-ex = http://hl7.org/fhir/StructureDefinition/quantity-precision
 Alias: $standard-status-ex = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+Alias: $identifier-type = http://hl7.org/fhir/ValueSet/identifier-type

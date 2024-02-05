@@ -7,7 +7,8 @@ StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.json  MII_EX_Labo
 StructureDefinition-mii-lm-labor.json                                MII_LM_Labor                                Logical    logicals/MII_LM_Labor.fsh                                  1 - 65
 StructureDefinition-mii-pr-labor-laboranforderung.json               MII_PR_Labor_Laboranforderung               Profile    profiles/MII_PR_Labor_Laboranforderung.fsh                 1 - 56
 StructureDefinition-mii-pr-labor-laborbefund.json                    MII_PR_Labor_Laborbefund                    Profile    profiles/MII_PR_Labor_Laborbefund.fsh                      1 - 71
-StructureDefinition-mii-pr-labor-laboruntersuchung.json              MII_PR_Labor_Laboruntersuchung              Profile    profiles/MII_PR_Labor_Laboruntersuchung.fsh                1 - 87
+StructureDefinition-mii-pr-labor-laboruntersuchung.json              MII_PR_Labor_Laboruntersuchung              Profile    profiles/MII_PR_Labor_Laboruntersuchung.fsh                1 - 88
+ValueSet-mii-vs-labor-identifier-type-codes.json                     MII_VS_Labor_Identifier_Type_Codes          ValueSet   valuesets/MII_VS_Labor_IdentifierTypes.fsh                 1 - 12
 ValueSet-mii-vs-labor-laborbereich.json                              MII_VS_Labor_Laborbereich                   ValueSet   valuesets/MII_VS_Labor_Laborbereich.fsh                    1 - 31
 ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json             MII_VS_Labor_Laborergbenis_Semiquantitativ  ValueSet   valuesets/MII_VS_Labor_Laborergebnis_Semiquantitativ.fsh   1 - 20
 ValueSet-mii-vs-labor-laborergebnis-qualitativ.json                  MII_VS_Labor_Laborergebnis_Qualitativ       ValueSet   valuesets/MII_VS_Labor_Laborergebnis_Qualitativ.fsh        1 - 20
