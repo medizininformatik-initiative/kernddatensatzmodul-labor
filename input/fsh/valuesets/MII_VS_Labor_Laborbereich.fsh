@@ -4,6 +4,7 @@ Title: "MII VS Labor Laborbereich"
 Description: "Laboruntersuchungen werden in diagnostische Fachbereiche (untersuchende Fachbereiche) gruppiert."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"
+* ^copyright = "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active

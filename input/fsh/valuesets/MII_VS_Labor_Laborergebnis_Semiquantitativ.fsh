@@ -9,6 +9,7 @@ Description: "Kodierung für semi-quantitative Laborergebnisse"
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-12-12"
+* ^copyright = "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."
 * $sct#260347006 "Present + out of ++++ (qualifier value)"
 * $sct#260348001 "Present ++ out of ++++ (qualifier value)"
 * $sct#260349009 "Present +++ out of ++++ (qualifier value)"
