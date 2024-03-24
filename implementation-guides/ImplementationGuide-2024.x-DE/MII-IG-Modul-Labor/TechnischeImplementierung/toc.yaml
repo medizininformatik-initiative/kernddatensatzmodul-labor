@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
 - name: Zeitpunkte im Labor
-  filename: Zeitpunkte im Labor.md
+  filename: ZeitpunkteImLabor.md
 - name: FHIR-Profile
   filename: FHIR-Profile
 - name: Terminologien
