@@ -15,11 +15,19 @@ Laborbefunde sind als Dokumente zusammengefasste in einem medizinischen Labor du
 
 ## Wichtige Zeitpunkte im Laborbefund
 
-Im Verlauf einer Laboranalyse von Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender werden verschiedene Zeitstempel festgehalten.  
+Im Verlauf einer Laboranalyse, von der Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender, werden verschiedene Zeitstempel festgehalten. 
 
-Für jede Analyse gibt es einen Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach (*Klinisches/r Bezugsdatum/-zeitpunkt*). Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. Dieses Element ist wichtig, um verschiedene Analysen im Zeitverlauf sortieren zu können. Die Präzision soll ausreichen, um auch Minuten zu erfassen. 
+Der *Anforderungszeitpunkt* einer Laboruntersuchung ist in der Regel, aber nicht zwingend (Nachforderung), der früheste Zeitpunkt und beschreibt den Zeitpunkt, zu dem ein Auftrag für eine Laboruntersuchung versendet wurde. 
 
-Das *Dokumentationsdatum* gibt an, wann der Laborericht freigegeben wurde. Da ein Laborbericht häufig mehrere Analysen umfasst, sollte für dieses der älteste Zeitstempel der enthaltenen Laboruntersuchungen gewählt werden, wenn die Befundfreigabe nicht mit einem expliziten Datum versehen ist.
+Der Zeitpunkt der Ankunft des Probematerials im Labor sollte als *Laboreingangszeitpunkt* angegeben werden. 
+
+Für jede Analyse gibt es einen Zeitpunkt (in der Regel den Zeitpunkt der Abnahme/Probengewinnung), zu dem die gemessene Eigenschaft im Probenmaterial (z.B. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Im Datenmodell wird dies als *Entnahmezeitpunkt* als Eigenschaft des Probenmaterials modelliert. Wurde das Probenmaterial über einen definierten Zeitraum gesammelt (z.B. 24h Urin), kann dieser auch als Eigenschaft des Probenmaterials hinterlegt werden. In diesem Fall stellt der Entnahmezeitpunkt einen Zeitraum dar. 
+
+Der *klinische Bezugszeitpunkt* des Laborberichts spiegelt den Entnahmezeitpunkt und liegt immer vor der Verfügbarkeit des Ergebnisses der Laboruntersuchung. Wenn der Entnahmezeitpunkt bekannt ist, wird meist dieser Zeitpunkt als klinischer Bezugszeitpunkt verwendet. Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. Dieses Element ist wichtig, um verschiedene Analysen im Zeitverlauf sortieren zu können. Die Präzision soll ausreichen, um auch Minuten zu erfassen. 
+
+Das *Dokumentationsdatum* gibt an, wann der Laborbericht freigegeben wurde. Da ein Laborbericht häufig mehrere Analysen umfasst, sollte für diesen der älteste Zeitstempel der enthaltenen Laboruntersuchungen gewählt werden, wenn die Befundfreigabe nicht mit einem expliziten Datum versehen ist. Vorläufige Befunde können eigenständig mit einem entsprechenden Status abgebildet werden.
+
+Pro durchgeführter Analyse wird zudem jeweils ein *Untersuchungsdatum* festgehalten.
 
 
 **Abbildung der einzelnen Laboruntersuchung im Modul LABORBEFUND:**
