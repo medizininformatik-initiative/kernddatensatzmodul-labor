@@ -43,6 +43,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Danny Ammon (SMITH)
 * Eva-Maria Riess (HiGHmed)
 * Fabian Prasser (HiGHmed)
+* Felix Erdfelder (SMITH)
 * Gustav Vella (HiGHmed)
 * Julian Saß (HiGHmed)
 * Kutaiba Saleh (SMITH)
