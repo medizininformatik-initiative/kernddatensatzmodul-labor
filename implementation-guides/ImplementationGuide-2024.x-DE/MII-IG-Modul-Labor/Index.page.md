@@ -12,9 +12,9 @@ Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profi
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 01.02.2024  |
-| Version | 2024.0.0         |
-| Status  | Active      |
+| Datum   | 25.03.2024  |
+| Version | 2024.0.0-ballot |
+| Status  | Ballotierung |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
