@@ -36,8 +36,7 @@ Das Basismodul Labor umfasst die Beschreibung von Laboruntersuchungen und den re
 
 Leitung des Moduls:
 
-* Andreas Bietenbeck
-* Danny Ammon
+* Martin Federbusch
 
 Technische Umsetzung:
 
