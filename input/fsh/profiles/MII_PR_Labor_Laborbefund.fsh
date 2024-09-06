@@ -59,6 +59,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * effective[x] 1.. MS
 * effective[x] only dateTime
 * effective[x] ^definition = "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können."
+* effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * issued 1.. MS
 * performer MS
 * performer.reference MS

@@ -19,18 +19,11 @@
   ],
   "description": "Quelle des klinischen Bezugsdatums",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
-      "expression": "Observation.effective.ofType(dateTime)",
+      "expression": "Observation.effective.ofType(dateTime), DiagnosticReport.effective.ofType(dateTime)",
       "type": "fhirpath"
     }
   ],
