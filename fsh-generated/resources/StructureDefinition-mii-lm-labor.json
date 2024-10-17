@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-lm-labor",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
-  "version": "2024.0.0-ballot",
+  "version": "2025.0.0",
   "name": "MII_LM_Labor",
   "title": "MII LM Labor",
   "status": "active",
@@ -19,13 +19,6 @@
   ],
   "description": "Logische Repräsentation des Basismoduls Labor",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "logical",
   "abstract": false,
   "type": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
