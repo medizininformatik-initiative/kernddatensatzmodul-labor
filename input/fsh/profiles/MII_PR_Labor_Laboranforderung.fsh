@@ -39,7 +39,7 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * identifier[anforderung].system 1.. MS
 * identifier[anforderung].value 1.. MS
 * identifier[anforderung].assigner 1.. MS
-* identifier[anforderung].assigner only $MII-Reference
+//* identifier[anforderung].assigner only $MII-Reference
 * status = #completed (exactly)
 * status MS
 * insert Translation(status ^short, de-DE, Status)
@@ -70,7 +70,7 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was ordered.)
 * code from mii-vs-labor-order-codes (example)
 * subject 1.. MS
-* subject only $MII-Reference
+//* subject only $MII-Reference
 * encounter MS
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)
