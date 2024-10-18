@@ -274,17 +274,6 @@
         "id": "Observation.identifier:analyseBefundCode.assigner",
         "path": "Observation.identifier.assigner",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -531,20 +520,6 @@
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Location"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

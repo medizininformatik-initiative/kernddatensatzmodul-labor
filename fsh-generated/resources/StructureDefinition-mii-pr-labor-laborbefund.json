@@ -257,38 +257,12 @@
         "id": "DiagnosticReport.identifier:befund.assigner",
         "path": "DiagnosticReport.identifier.assigner",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan",
-              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
-            ]
-          }
-        ],
         "mustSupport": true,
         "_short": {
           "extension": [
@@ -618,20 +592,6 @@
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Location"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -1007,17 +967,6 @@
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
         "mustSupport": true,
         "_short": {
           "extension": [
