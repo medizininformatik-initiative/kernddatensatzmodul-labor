@@ -41,7 +41,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier[analyseBefundCode].system 1.. MS
 * identifier[analyseBefundCode].value 1.. MS
 * identifier[analyseBefundCode].assigner 1.. MS
-* identifier[analyseBefundCode].assigner only $MII-Reference
+//* identifier[analyseBefundCode].assigner only $MII-Reference
 * status MS
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
@@ -69,7 +69,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * code from $ResultsLabObservationUvIps (preferred)
 * code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
-* subject only $MII-Reference
+//* subject only $MII-Reference
 * encounter MS
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)

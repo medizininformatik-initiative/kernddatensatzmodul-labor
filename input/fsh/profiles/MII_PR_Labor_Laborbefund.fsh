@@ -40,13 +40,13 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * identifier[befund].system 1.. MS
 * identifier[befund].value 1.. MS
 * identifier[befund].assigner 1.. MS
-* identifier[befund].assigner only $MII-Reference
+//* identifier[befund].assigner only $MII-Reference
 * basedOn 1.. MS
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
 * insert Translation(basedOn ^short, en-US, Based on)
 * insert Translation(basedOn ^definition, de-DE, Bezug zum Laborauftrag\, auf dem dieser Laborbefund basiert.)
 * insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory report is based.)
-* basedOn only $MII-Reference
+//* basedOn only $MII-Reference
 * status MS
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
@@ -78,7 +78,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * code.coding contains loinc-labReport 1..1 MS
 * code.coding[loinc-labReport] = $loinc#11502-2
 * subject 1.. MS
-* subject only $MII-Reference
+//* subject only $MII-Reference
 * encounter MS
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)
@@ -121,7 +121,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(result ^short, en-US, Result)
 * insert Translation(result ^definition, de-DE, Laborergebnisse\, die Teil dieses Laborbefunds sind.)
 * insert Translation(result ^definition, en-US, Laboratory test results that are part of this diagnostic report.)
-* result only $MII-Reference
+//* result only $MII-Reference
 * conclusion MS
 * insert Translation(conclusion ^short, de-DE, Schlussfolgerung)
 * insert Translation(conclusion ^short, en-US, Conclusion)
