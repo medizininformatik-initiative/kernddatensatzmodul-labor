@@ -90,6 +90,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(effective[x] ^definition, de-DE, Zeitpunkt\, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach.)
 * insert Translation(effective[x] ^definition, en-US, The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient.)
 * effective[x] only dateTime
+* effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * effective[x] ^definition = """
     Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. 
     Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. 

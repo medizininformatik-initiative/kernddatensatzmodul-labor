@@ -23,7 +23,7 @@
   "abstract": false,
   "context": [
     {
-      "expression": "Observation.effective.ofType(dateTime)",
+      "expression": "Observation.effective.ofType(dateTime), DiagnosticReport.effective.ofType(dateTime)",
       "type": "fhirpath"
     }
   ],
