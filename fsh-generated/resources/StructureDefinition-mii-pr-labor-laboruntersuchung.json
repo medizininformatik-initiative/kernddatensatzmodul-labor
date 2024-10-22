@@ -916,6 +916,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "draft"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           }
         ],
         "path": "Observation.value[x].extension",
@@ -943,6 +947,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "draft"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           }
         ],
         "path": "Observation.value[x].value.extension",
@@ -1008,6 +1016,32 @@
         "id": "Observation.value[x]:valueCodeableConcept.coding.code",
         "path": "Observation.value[x].coding.code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRatio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
         "mustSupport": true
       },
       {

@@ -116,6 +116,8 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueCodeableConcept.coding 1.. MS
 * valueCodeableConcept.coding.system 1.. MS
 * valueCodeableConcept.coding.code 1.. MS
+* valueRange MS
+* valueRatio MS
 * dataAbsentReason MS
 * insert Translation(dataAbsentReason ^short, de-DE, Grund für fehlende Daten)
 * insert Translation(dataAbsentReason ^short, en-US, Data absent reason)
