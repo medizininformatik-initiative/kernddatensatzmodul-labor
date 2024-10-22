@@ -638,6 +638,12 @@
           {
             "code": "Identifier"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.identifier"
+          }
         ]
       },
       {
@@ -650,6 +656,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.collected"
           }
         ]
       },
@@ -664,6 +676,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.receivedTime"
+          }
         ]
       },
       {
@@ -677,6 +695,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.type"
+          }
         ]
       },
       {
@@ -689,6 +713,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.bodySite"
           }
         ]
       },
@@ -944,6 +974,12 @@
           {
             "code": "Identifier"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.identifier"
+          }
         ]
       },
       {
@@ -995,6 +1031,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.type"
+          }
         ]
       },
       {
@@ -1007,6 +1049,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.bodySite"
           }
         ]
       },

@@ -100,11 +100,11 @@ Source: MII_LM_Labor
   * Kommentar -> "Observation.note"
   * Untersuchungsmethode -> "Observation.method"
   * Probenmaterial -> "Observation.specimen"
-    * Identifikation 
-    * EntAbnahmezeitpunkt 
-    * Laboreingangszeitpunkt 
-    * Probenart 
-    * Herkunftsort 
+    * Identifikation -> "Specimen.identifier"
+    * EntAbnahmezeitpunkt -> "Specimen.collection.collected"
+    * Laboreingangszeitpunkt -> "Specimen.receivedTime"
+    * Probenart -> "Specimen.type"
+    * Koerperstelle -> "Specimen.collection.bodySite"
   * Referenzbereich -> "Observation.referenceRange"
     * Typ -> "Observation.referenceRange.type"
     * Obergrenze -> "Observation.referenceRange.high"
@@ -117,8 +117,8 @@ Source: MII_LM_Labor
     * Bezeichnung -> "ServiceRequest.code.text"
   * Anforderungsdatum -> "ServiceRequest.authoredOn"
   * Probenmaterial -> "ServiceRequest.specimen"
-    * Identifikation 
+    * Identifikation -> "Specimen.identifier"
     * EntAbnahmezeitpunkt -> "Specimen.collected[x]"
     * Laboreingangszeitpunkt -> "Specimen.receivedTime"
-    * Probenart 
-    * Herkunftsort 
+    * Probenart -> "Specimen.type"
+    * Koerperstelle -> "Specimen.collection.bodySite"
