@@ -19,6 +19,12 @@
   ],
   "description": "Logische Repräsentation des Basismoduls Labor",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "FHIR",
+      "name": "Labor LogicalModel FHIR Mapping"
+    }
+  ],
   "kind": "logical",
   "abstract": false,
   "type": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
@@ -37,11 +43,17 @@
         "path": "Laborbefund.Identifikation",
         "short": "Identifikator des Laborbefunds",
         "definition": "Identifikator des Laborbefunds",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "type": [
           {
             "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.identifier"
           }
         ]
       },
@@ -50,24 +62,17 @@
         "path": "Laborbefund.Status",
         "short": "Status des Laborbefunds:",
         "definition": "vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich)\r\nfinal (Endbefund, sollte nicht mehr geändert werden.)\r\nfinal korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem noch Änderungen vorgenommen werden.)",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "code"
           }
-        ]
-      },
-      {
-        "id": "Laborbefund.KlinischesBezugsdatum",
-        "path": "Laborbefund.KlinischesBezugsdatum",
-        "short": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
-        "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
-        "min": 0,
-        "max": "*",
-        "type": [
+        ],
+        "mapping": [
           {
-            "code": "dateTime"
+            "identity": "FHIR",
+            "map": "DiagnosticReport.status"
           }
         ]
       },
@@ -76,12 +81,17 @@
         "path": "Laborbefund.KlinischerBezugszeitpunkt",
         "short": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
         "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
-        "comment": "In ArtDecor wird dieses Element zusammengefasst zu Klinisches/r Bezugsdatum/-zeitpunkt. Dieser Name kann jedoch nach geltenden Regeln von ElementDefinition.path nicht angebildet werden. Deshalb wurde das Element geteilt.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.effective[x]"
           }
         ]
       },
@@ -90,11 +100,17 @@
         "path": "Laborbefund.Dokumentationsdatum",
         "short": "Zeitpunkt, an dem der Laborbefund dokumentiert wurde.",
         "definition": "Zeitpunkt, an dem der Laborbefund dokumentiert wurde.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.issued"
           }
         ]
       },
@@ -109,6 +125,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen"
+          }
         ]
       },
       {
@@ -121,6 +143,12 @@
         "type": [
           {
             "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.identifier"
           }
         ]
       },
@@ -135,6 +163,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collectedDateTime"
+          }
         ]
       },
       {
@@ -147,6 +181,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.receivedTime"
           }
         ]
       },
@@ -161,6 +201,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.type"
+          }
         ]
       },
       {
@@ -173,6 +219,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.bodySite"
           }
         ]
       },
@@ -187,6 +239,12 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.note"
+          }
         ]
       },
       {
@@ -199,6 +257,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
           }
         ]
       },
@@ -213,6 +277,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
         ]
       },
       {
@@ -225,6 +295,12 @@
         "type": [
           {
             "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.identifier"
           }
         ]
       },
@@ -239,6 +315,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
         ]
       },
       {
@@ -251,6 +333,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
           }
         ]
       },
@@ -265,6 +353,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category.coding.code"
+          }
         ]
       },
       {
@@ -277,6 +371,12 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category.coding.display"
           }
         ]
       },
@@ -291,6 +391,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
+          }
         ]
       },
       {
@@ -303,6 +409,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category.coding.code"
           }
         ]
       },
@@ -317,6 +429,12 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category.coding.display"
+          }
         ]
       },
       {
@@ -329,6 +447,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.valueQuantity"
           }
         ]
       },
@@ -343,6 +467,31 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code.text"
+          }
+        ]
+      },
+      {
+        "id": "Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt",
+        "path": "Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt",
+        "short": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+        "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.effective[x].extension[QuelleKlinischesBezugsdatum]"
+          }
         ]
       },
       {
@@ -355,6 +504,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
           }
         ]
       },
@@ -369,6 +524,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.effectiveDateTime"
+          }
         ]
       },
       {
@@ -381,6 +542,12 @@
         "type": [
           {
             "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.valueQuantity"
           }
         ]
       },
@@ -395,6 +562,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.interpretation"
+          }
         ]
       },
       {
@@ -407,6 +580,12 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.note"
           }
         ]
       },
@@ -421,6 +600,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.method"
+          }
         ]
       },
       {
@@ -433,6 +618,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.specimen"
           }
         ]
       },
@@ -447,6 +638,12 @@
           {
             "code": "Identifier"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.identifier"
+          }
         ]
       },
       {
@@ -459,6 +656,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.collected"
           }
         ]
       },
@@ -473,6 +676,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.receivedTime"
+          }
         ]
       },
       {
@@ -486,11 +695,17 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.type"
+          }
         ]
       },
       {
-        "id": "Laborbefund.Laboruntersuchung.Probenmaterial.Herkunftsort",
-        "path": "Laborbefund.Laboruntersuchung.Probenmaterial.Herkunftsort",
+        "id": "Laborbefund.Laboruntersuchung.Probenmaterial.Koerperstelle",
+        "path": "Laborbefund.Laboruntersuchung.Probenmaterial.Koerperstelle",
         "short": "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
         "definition": "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
         "min": 0,
@@ -498,6 +713,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.bodySite"
           }
         ]
       },
@@ -525,6 +746,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange"
+          }
         ]
       },
       {
@@ -537,6 +764,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.type"
           }
         ]
       },
@@ -551,6 +784,12 @@
           {
             "code": "Quantity"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.high"
+          }
         ]
       },
       {
@@ -563,6 +802,12 @@
         "type": [
           {
             "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.referenceRange.low"
           }
         ]
       },
@@ -577,6 +822,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest"
+          }
         ]
       },
       {
@@ -589,6 +840,12 @@
         "type": [
           {
             "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.identifier"
           }
         ]
       },
@@ -603,6 +860,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.status"
+          }
         ]
       },
       {
@@ -615,6 +878,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.code"
           }
         ]
       },
@@ -629,6 +898,12 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.code.coding.code"
+          }
         ]
       },
       {
@@ -641,6 +916,12 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.code.text"
           }
         ]
       },
@@ -655,6 +936,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.authoredOn"
+          }
         ]
       },
       {
@@ -667,6 +954,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.specimen"
           }
         ]
       },
@@ -681,6 +974,12 @@
           {
             "code": "Identifier"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.identifier"
+          }
         ]
       },
       {
@@ -693,6 +992,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collected[x]"
           }
         ]
       },
@@ -707,6 +1012,12 @@
           {
             "code": "dateTime"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.receivedTime"
+          }
         ]
       },
       {
@@ -720,11 +1031,17 @@
           {
             "code": "code"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.type"
+          }
         ]
       },
       {
-        "id": "Laborbefund.Laboranforderung.Probenmaterial.Herkunftsort",
-        "path": "Laborbefund.Laboranforderung.Probenmaterial.Herkunftsort",
+        "id": "Laborbefund.Laboranforderung.Probenmaterial.Koerperstelle",
+        "path": "Laborbefund.Laboranforderung.Probenmaterial.Koerperstelle",
         "short": "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
         "definition": "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
         "min": 0,
@@ -732,6 +1049,12 @@
         "type": [
           {
             "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Specimen.collection.bodySite"
           }
         ]
       },
