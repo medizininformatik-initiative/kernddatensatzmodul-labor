@@ -5,13 +5,13 @@
   "id": "mii-vs-labor-identifier-type-codes",
   "title": "MII VS Labor Identifier Type Codes",
   "description": "Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist.",
+  "version": "2025.0.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
-  "version": "2025.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

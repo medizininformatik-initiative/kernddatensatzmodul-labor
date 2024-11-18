@@ -5,13 +5,13 @@
   "id": "mii-vs-labor-quelle-klinisches-bezugsdatum",
   "title": "MII VS Labor Quelle klinisches Bezugsdatum",
   "description": "Kodierung der Quelle des klinischen Bezugsdatums",
+  "version": "2025.0.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
-  "version": "2025.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

@@ -18,9 +18,9 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * meta.source MS
 * meta.profile MS
 * identifier MS
-* insert Translation(identifier ^short, de-DE, Identifikator)
+  * ^short = "Identifikator"
+  * ^definition = "Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist."
 * insert Translation(identifier ^short, en-US, Identifier)
-* insert Translation(identifier ^definition, de-DE, Kennung/en\, unter der/denen diese Laboruntersuchung bekannt ist.)
 * insert Translation(identifier ^definition, en-US, Identifier/s by which this laboratory test is known.)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
@@ -43,14 +43,14 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier[analyseBefundCode].assigner 1.. MS
 //* identifier[analyseBefundCode].assigner only $MII-Reference
 * status MS
-* insert Translation(status ^short, de-DE, Status)
+  * ^short = "Status"
+  * ^definition = "abgeschlossen"
 * insert Translation(status ^short, en-US, Status)
-* insert Translation(status ^definition, de-DE, abgeschlossen)
 * insert Translation(status ^definition, en-US, completed)
 * category 1.. MS
-* insert Translation(category ^short, de-DE, Kategorie)
+  * ^short = "Kategorie"
+  * ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
 * insert Translation(category ^short, en-US, Category)
-* insert Translation(category ^definition, de-DE, Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung)
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -62,42 +62,42 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * category.coding[loinc-observation] = $loinc#26436-6
 * category.coding[observation-category] = $observation-category#laboratory
 * code MS
-* insert Translation(code ^short, de-DE, Code)
+  * ^short = "Code"
+  * ^definition = "Ein LOINC Code für den Laborparameter bzw. Labortest, der durchgeführt wurde."
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein LOINC Code für den Laborparameter bzw. Labortest\, der durchgeführt wurde.)
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was performed.)
 * code from $ResultsLabObservationUvIps (preferred)
 * code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
 //* subject only $MII-Reference
 * encounter MS
-* insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
+  * ^short = "Fall oder Kontakt"
+  * ^definition = "Fall oder Kontakt, bei dem die Laboruntersuchung durchgeführt wurde."
 * insert Translation(encounter ^short, en-US, Encounter)
-* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem die Laboruntersuchung durchgeführt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the laboratory test was performed.)
 * effective[x] 1.. MS
-* insert Translation(effective[x] ^short, de-DE, Untersuchungszeitpunkt)
+  * ^short = "Untersuchungszeitpunkt"
+  * ^definition = "Zeitpunkt des Beginns der Untersuchung"
 * insert Translation(effective[x] ^short, en-US, Time of observation)
-* insert Translation(effective[x] ^definition, de-DE, Zeitpunkt des Beginns der Untersuchung)
 * insert Translation(effective[x] ^definition, en-US, The time at which the observation was made)
 * effective[x] only dateTime
 * effective[x] obeys mii-lab-1
-//* effectiveDateTime.extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
-* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^short, de-DE, Quelle klinisches Bezugsdatum)
+* effective[x].extension[QuelleKlinischesBezugsdatum]
+  * ^short = "Quelle klinisches Bezugsdatum"
+  * ^definition = "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor"
 * insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^short, en-US, Source of clinical reference date)
-* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^definition, de-DE, Datum der Probenentnahme | Datum des Eingangs der Probe im Labor)
 * insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^definition, en-US, Specimen collection date | Date sample received in laboratory)
 * issued MS
-* insert Translation(issued ^short, de-DE, Dokumentationsdatum)
+  * ^short = "Dokumentationsdatum"
+  * ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
 * insert Translation(issued ^short, en-US, Issued)
-* insert Translation(issued ^definition, de-DE, Zeitpunkt\, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde)
 * insert Translation(issued ^definition, en-US, The point in time when the laboratory result was documented)
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] MS
-* insert Translation(value[x] ^short, de-DE, Messwert)
+  * ^short = "Messwert"
+  * ^definition = "Wert der Analyse"
 * insert Translation(value[x] ^short, en-US, Value)
-* insert Translation(value[x] ^definition, de-DE, Wert der Analyse)
 * insert Translation(value[x] ^definition, en-US, Value of the analysis)
 * valueQuantity MS
 * valueQuantity.extension contains $pq-translation-ex named pqTranslation 0..*
@@ -119,40 +119,40 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueRange MS
 * valueRatio MS
 * dataAbsentReason MS
-* insert Translation(dataAbsentReason ^short, de-DE, Grund für fehlende Daten)
+  * ^short = "Grund für fehlende Daten"
+  * ^definition = "unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt"
 * insert Translation(dataAbsentReason ^short, en-US, Data absent reason)
-* insert Translation(dataAbsentReason ^definition, de-DE, unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt)
 * insert Translation(dataAbsentReason ^definition, en-US, unknown | masked | not-applicable | error | not-performed)
 * interpretation MS
-* insert Translation(interpretation ^short, de-DE, Interpretation)
+  * ^short = "Interpretation"
+  * ^definition = "Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal."
 * insert Translation(interpretation ^short, en-US, Interpretation)
-* insert Translation(interpretation ^definition, de-DE, Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch\, niedrig\, normal.)
 * insert Translation(interpretation ^definition, en-US, A categorical assessment of the value. For example\, high\, low\, normal.)
 * note MS
-* insert Translation(note ^short, de-DE, Hinweis)
+  * ^short = "Hinweis"
+  * ^definition = "Zusätzliche Informationen zur Laboruntersuchung als Freitext."
 * insert Translation(note ^short, en-US, Note)
-* insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Laboruntersuchung als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the laboratory test as free text.)
 * bodySite ..0
 * method MS
-* insert Translation(method ^short, de-DE, Untersuchungsmethode)
+  * ^short = "Untersuchungsmethode"
+  * ^definition = "Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält."
 * insert Translation(method ^short, en-US, Method)
-* insert Translation(method ^definition, de-DE, Konkrete Untersuchungsmethode\, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält)
 * insert Translation(method ^definition, en-US, Specific examination method\, if the LOINC code for the laboratory test does not contain a method)
 * specimen MS
-* insert Translation(specimen ^short, de-DE, Probenmaterial)
+  * ^short = "Probenmaterial"
+  * ^definition = "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden"
 * insert Translation(specimen ^short, en-US, Specimen)
-* insert Translation(specimen ^definition, de-DE, Probe\, auf deren Basis die Laboruntersuchungen angefertigt werden)
 * insert Translation(specimen ^definition, en-US, Specimen on which the laboratory tests are performed)
 * specimen.reference MS
 * specimen.identifier MS
 * device MS
-* insert Translation(device ^short, de-DE, Gerät)
+  * ^short = "Gerät"
+  * ^definition = "Gerät, das zur Generierung der Messwerte verwendet wurde."
 * insert Translation(device ^short, en-US, Device)
-* insert Translation(device ^definition, de-DE, Das Gerät\, das zur Generierung der Messwerte verwendet wurde.)
 * insert Translation(device ^definition, en-US, The device used to generate the test data.)
 * referenceRange MS
-* insert Translation(referenceRange ^short, de-DE, Referenzbereich)
+  * ^short = "Referenzbereich"
+  * ^definition = "Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird."
 * insert Translation(referenceRange ^short, en-US, Reference range)
-* insert Translation(referenceRange ^definition, de-DE, Bereich\, in dem der Messwert als normal oder empfohlen betrachtet wird.)
 * insert Translation(referenceRange ^definition, en-US, Guidance on how to interpret the value by comparison to a normal or recommended range.)

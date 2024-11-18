@@ -17,11 +17,11 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * meta MS
 * meta.source MS
 * meta.profile MS
-* insert Translation(identifier ^short, de-DE, Identifikator)
-* insert Translation(identifier ^short, en-US, Identifier)
-* insert Translation(identifier ^definition, de-DE, Kennung/en\, unter der/denen dieser Laborbefund bekannt ist.)
-* insert Translation(identifier ^definition, en-US, Identifier/s by which this laboratory report is known.)
 * identifier MS
+  * ^definition = "Kennung/en, unter der/denen dieser Laborbefund bekannt ist."
+  * ^short = "Identifikator"
+* insert Translation(identifier ^short, en-US, Identifier)
+* insert Translation(identifier ^definition, en-US, Identifier/s by which this laboratory report is known.)
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
@@ -42,20 +42,20 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * identifier[befund].assigner 1.. MS
 //* identifier[befund].assigner only $MII-Reference
 * basedOn 1.. MS
-* insert Translation(basedOn ^short, de-DE, Basiert auf)
+  * ^short = "Basiert auf"
+  * ^definition = "Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert."
 * insert Translation(basedOn ^short, en-US, Based on)
-* insert Translation(basedOn ^definition, de-DE, Bezug zum Laborauftrag\, auf dem dieser Laborbefund basiert.)
 * insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory report is based.)
 //* basedOn only $MII-Reference
 * status MS
-* insert Translation(status ^short, de-DE, Status)
+  * ^short = "Status"
+  * ^definition = "registriert | teilweise | vorläufig | final"
 * insert Translation(status ^short, en-US, Status)
-* insert Translation(status ^definition, de-DE, registriert | teilweise | vorläufig | final)
 * insert Translation(status ^definition, en-US, registered | partial | preliminary | final)
 * category 1..1 MS
-* insert Translation(category ^short, de-DE, Kategorie)
+  * ^short = "Kategorie"
+  * ^definition = "Klassifikation des Befunds als Laborbefund"
 * insert Translation(category ^short, en-US, Category)
-* insert Translation(category ^definition, de-DE, Klassifikation des Befunds als Laborbefund)
 * insert Translation(category ^definition, en-US, Classification of the report as laboratory report)
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -67,9 +67,9 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * category.coding[loinc-lab] = $loinc#26436-6
 * category.coding[diagnostic-service-sections] = $v2-0074#LAB
 * code MS
-* insert Translation(code ^short, de-DE, Code)
+  * ^short = "Code"
+  * ^definition = "LOINC Code zur Identifikation des Befunds als Laborbefund."
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, de-DE, Ein LOINC Code zur Identifikation des Befunds als Laborbefund.)
 * insert Translation(code ^definition, en-US, A LOINC code identifying the report as laboratory report.)
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -80,14 +80,14 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * subject 1.. MS
 //* subject only $MII-Reference
 * encounter MS
-* insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
+  * ^short = "Fall oder Kontakt"
+  * ^definition = "Fall oder Kontakt, bei dem der Laborbefund erstellt wurde."
 * insert Translation(encounter ^short, en-US, Encounter)
-* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem der Laborbefund erstellt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the laboratory report was created.)
 * effective[x] 1.. MS
-* insert Translation(effective[x] ^short, de-DE, Klinisches Bezugsdatum)
+  * ^short = "Klinisches Bezugsdatum"
+  * ^definition = "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach."
 * insert Translation(effective[x] ^short, en-US, Clinical reference Date)
-* insert Translation(effective[x] ^definition, de-DE, Zeitpunkt\, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach.)
 * insert Translation(effective[x] ^definition, en-US, The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient.)
 * effective[x] only dateTime
 * effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
@@ -98,32 +98,32 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
     Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.
     """
 * issued 1.. MS
-* insert Translation(issued ^short, de-DE, Dokumentationsdatum)
+  * ^short = "Dokumentationsdatum"
+  * ^definition = "Zeitpunkt, an dem der Laborbefund dokumentiert wurde."
 * insert Translation(issued ^short, en-US, Issued)
-* insert Translation(issued ^definition, de-DE, Zeitpunkt\, an dem der Laborbefund dokumentiert wurde.)
 * insert Translation(issued ^definition, en-US, The time when the laboratory report was documented.)
 * performer MS
-* insert Translation(performer ^short, de-DE, Ausführende*r)
+  * ^short = "Ausführende*r"
+  * ^definition = "Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist."
 * insert Translation(performer ^short, en-US, Performer)
-* insert Translation(performer ^definition, de-DE, Verantwortliche Person oder Organisation\, die für die Ausstellung des Befunds verantwortlich ist.)
 * insert Translation(performer ^definition, en-US, The diagnostic service that is responsible for issuing the report.)
 * performer.reference MS
 * performer.identifier MS
 * specimen MS
-* insert Translation(specimen ^short, de-DE, Probenmaterial)
+  * ^short = "Probenmaterial"
+  * ^definition = "Bioproben, auf denen dieser Laborbefund basiert."
 * insert Translation(specimen ^short, en-US, Specimen)
-* insert Translation(specimen ^definition, de-DE, Details zu den Bioproben\, auf denen dieser Laborbefund basiert.)
 * insert Translation(specimen ^definition, en-US, Details about the specimens on which this diagnostic report is based.)
 * specimen.reference MS
 * specimen.identifier MS
 * result 1.. MS
-* insert Translation(result ^short, de-DE, Ergebnis)
+  * ^short = "Ergebnis"
+  * ^definition = "Laborergebnisse, die Teil dieses Laborbefunds sind."
 * insert Translation(result ^short, en-US, Result)
-* insert Translation(result ^definition, de-DE, Laborergebnisse\, die Teil dieses Laborbefunds sind.)
 * insert Translation(result ^definition, en-US, Laboratory test results that are part of this diagnostic report.)
 //* result only $MII-Reference
 * conclusion MS
-* insert Translation(conclusion ^short, de-DE, Schlussfolgerung)
+  * ^short = "Schlussfolgerung"
+  * ^definition = "Klinische Schlussfolgerung/Interpretation der Testergebnisse"
 * insert Translation(conclusion ^short, en-US, Conclusion)
-* insert Translation(conclusion ^definition, de-DE, Klinische Schlussfolgerung/Interpretation der Testergebnisse)
 * insert Translation(conclusion ^definition, en-US, Clinical conclusion/interpretation of test results)
