@@ -119,23 +119,9 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "mustSupport": true,
+        "short": "Identifikator",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Identifikator"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -151,21 +137,9 @@
             }
           ]
         },
+        "definition": "Kennung/en, unter der/denen diese Laboranforderung bekannt ist.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Kennung/en, unter der/denen diese Laboranforderung bekannt ist."
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -180,7 +154,9 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.identifier:anforderung",
@@ -262,23 +238,9 @@
       {
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
-        "fixedCode": "completed",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Status"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -294,21 +256,9 @@
             }
           ]
         },
+        "definition": "Der Status der Laboranforderung.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "abgeschlossen"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -323,28 +273,16 @@
               ]
             }
           ]
-        }
+        },
+        "fixedCode": "completed",
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.intent",
         "path": "ServiceRequest.intent",
-        "fixedCode": "order",
-        "mustSupport": true,
+        "short": "Intention",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Intention"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -360,21 +298,9 @@
             }
           ]
         },
+        "definition": "Auftrag",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Auftrag"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -389,29 +315,16 @@
               ]
             }
           ]
-        }
+        },
+        "fixedCode": "order",
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Kategorie"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -427,21 +340,9 @@
             }
           ]
         },
+        "definition": "Klassifikation als Laborauftrag",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Klassifikation als Laborauftrag"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -456,7 +357,10 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.category.coding",
@@ -488,27 +392,9 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "min": 1,
-        "mustSupport": true,
-        "binding": {
-          "strength": "example",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes"
-        },
+        "short": "Code",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Code"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -524,21 +410,9 @@
             }
           ]
         },
+        "definition": "Ein LOINC Code für den Laborparameter bzw. Labortest, der beauftragt wurde.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Ein LOINC Code für den Laborparameter bzw. Labortest, der beauftragt wurde."
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -553,6 +427,12 @@
               ]
             }
           ]
+        },
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes"
         }
       },
       {
@@ -563,22 +443,9 @@
       {
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
-        "mustSupport": true,
+        "short": "Fall oder Kontakt",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fall oder Kontakt"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -594,21 +461,9 @@
             }
           ]
         },
+        "definition": "Fall oder Kontakt, bei dem der Laborauftrag gestellt wurde.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Fall oder Kontakt, bei dem der Laborauftrag gestellt wurde."
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -623,28 +478,15 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.authoredOn",
         "path": "ServiceRequest.authoredOn",
-        "min": 1,
-        "mustSupport": true,
+        "short": "Anforderungsdatum",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Anforderungsdatum"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -660,21 +502,9 @@
             }
           ]
         },
+        "definition": "Das Datum, an dem der Laborauftrag ursprünglich verfasst wurde.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Das Datum, an dem der Laborauftrag ursprünglich verfasst wurde."
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -689,27 +519,16 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.specimen",
         "path": "ServiceRequest.specimen",
-        "mustSupport": true,
+        "short": "Probenmaterial",
         "_short": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Probenmaterial"
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -725,21 +544,9 @@
             }
           ]
         },
+        "definition": "Eine oder mehrere Bioproben, die der Labortest verwendet.",
         "_definition": {
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Eine oder mehrere Bioproben, die der Labortest verwendet."
-                }
-              ]
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -754,7 +561,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.specimen.reference",

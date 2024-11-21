@@ -5,13 +5,13 @@
   "id": "mii-vs-labor-laborbereich",
   "title": "MII VS Labor Laborbereich",
   "description": "Laboruntersuchungen werden in diagnostische Fachbereiche (untersuchende Fachbereiche) gruppiert.",
+  "version": "2025.0.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
-  "version": "2025.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

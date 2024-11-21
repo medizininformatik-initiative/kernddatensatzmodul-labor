@@ -9,4 +9,4 @@ Description: "Kodierung der Beauftragungen von Laboruntersuchungen"
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-12-12"
-* include codes from system LOINC where ORDER_OBS regex /Order|Both/
+* include codes from system $loinc where ORDER_OBS regex /Order|Both/
