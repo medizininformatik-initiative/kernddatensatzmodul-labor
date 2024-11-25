@@ -10,12 +10,12 @@ topic: MIIIGModulLaborbefund
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Laborbefund' der Medizininformatik-Initiative.
 Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
 
-| Veröffentlichung   |   |
-|---------|---|
-| Datum   | 25.03.2024  |
-| Version | 2024.0.0-ballot |
-| Status  | Ballotierung |
-| Realm   | DE          | 
+| Veröffentlichung   |            |
+|---------|------------|
+| Datum   | 25.11.2024 |
+| Version | 2025.0.0   |
+| Status  | active     |
+| Realm   | DE         | 
 
 ## Inhaltsverzeichnis
 
@@ -54,6 +54,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Sylvia Thun (HL7 Deutschland)
 * Thomas Ganslandt (MIRACUM)
 * Ulrich Sax (HiGHmed)
+* Patrick Werner (HL7 Deutschland)
 
 ## Copyright-Hinweis, Nutzungshinweise
 Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
