@@ -1,5 +1,5 @@
 ---
-topic: CapabilityRest
+topic: FQL-Capability-REST
 ---
 <fql>
 from

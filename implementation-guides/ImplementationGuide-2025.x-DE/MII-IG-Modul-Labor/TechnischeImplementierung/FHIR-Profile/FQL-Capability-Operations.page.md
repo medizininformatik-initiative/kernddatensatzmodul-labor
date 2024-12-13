@@ -1,3 +1,6 @@
+---
+topic: FQL-Capability-Operations
+---
 <fql>
 from
 	CapabilityStatement
