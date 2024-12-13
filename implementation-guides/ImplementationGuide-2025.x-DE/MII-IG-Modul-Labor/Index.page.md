@@ -10,12 +10,12 @@ topic: MIIIGModulLaborbefund
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Laborbefund' der Medizininformatik-Initiative.
 Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
 
-| Veröffentlichung   |            |
-|---------|------------|
-| Datum   | 25.11.2024 |
-| Version | 2025.0.0   |
-| Status  | active     |
-| Realm   | DE         | 
+| Veröffentlichung   |   |
+|---------|---|
+| Datum   | 13.12.2024  |
+| Version | 2025.0.0 |
+| Status  | active |
+| Realm   | DE          | 
 
 ## Inhaltsverzeichnis
 
@@ -25,8 +25,8 @@ Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profi
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt wurden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
+* Martin Federbusch, Universitätsklinikum Leipzig
 * Danny Ammon, Universitätsklinikum Jena
-* Julian Saß, Berlin Institute of Health at Charité (BIH) 
 * Karoline Buckow, TMF – Technologie- und Methodenplattform
 für die vernetzte medizinische Forschung e.V.
 
@@ -45,16 +45,20 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Fabian Prasser (HiGHmed)
 * Felix Erdfelder (SMITH)
 * Gustav Vella (HiGHmed)
+* Heinrich Lautenbacher
 * Julian Saß (HiGHmed)
 * Kutaiba Saleh (SMITH)
+* Martin Federbusch (SMITH)
 * Matthias Löbe (SMITH)
+* Noemi Deppenwiese (MIRACUM)
 * Olga Davidenko (DIFUTURE)
+* Patrick Werner (HL7 Deutschland)
 * Raffael Bild (DIFUTURE)
 * Sabine Gerber (DIFUTURE)
 * Sylvia Thun (HL7 Deutschland)
 * Thomas Ganslandt (MIRACUM)
 * Ulrich Sax (HiGHmed)
-* Patrick Werner (HL7 Deutschland)
+
 
 ## Copyright-Hinweis, Nutzungshinweise
 Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
