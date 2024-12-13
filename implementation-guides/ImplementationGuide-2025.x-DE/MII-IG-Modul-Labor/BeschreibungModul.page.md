@@ -19,12 +19,13 @@ Für eine tabellarische Übersicht samt Zuordnung zu den entsprechenden FHIR-Ite
 
 Im Verlauf einer Laboranalyse, von der Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender, können verschiedene reelle Zeitpunkte für die Interpretation relevant werden. Viele dieser Zeitpunkte sind in medizinischen Laboren automatisiert und in hoher Qualität in entsprechenden Zeitstempeln dokumentiertx, während manche Zeitstempel aufgrund von z.B. manueller Dokumentation nur ein grobes Surrogat für die reellen Zeitpunkte sein können.
 
-## Untersuchungszeitpunkt (Klinischer Bezugszeitpunkt der Laboruntersuchung) und Klinischer Bezugszeitpunkt des Laborbefundes:
+## Untersuchungszeitpunkt[^1] (Klinischer Bezugszeitpunkt der Laboruntersuchung) und Klinischer Bezugszeitpunkt des Laborbefundes:
 ### Beschreibung - Klinischer Bezugszeitpunkt der Laboruntersuchung:
 Für jede Analyse gibt es einen Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (z.B. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. In der Regel ist dies der Zeitpunkt der Entnahme/Probengewinnung. Die Präzision soll ausreichen, um auch Minuten zu erfassen.
 Optimalerweise liegt ein gut dokumentierter Entnahmezeitpunkt vor und kann so als klinischer Bezugszeitpunkt verwendet werden. Oft liegt aber kein Entnahmezeitpunkt vor bzw. dessen Genauigkeit ist bei weitem nicht ausreichend, sodass häufig der Laboreingangszeitpunkt oder ggf. andere Zeitpunkte (z.B. geschätzter/berechneter Entnahmezeitpunkt) verwendet werden.
-Der klinische Bezugszeitpunkt wird in der klinischen Praxis am ehesten verwendet, um mehrere Analysen des gleichen Laborparameters chronologisch zu ordnen (z.B. bei Darstellung von Werteverläufen).
-1 In Version 1.0.6 von 2021 widersprach die Beschreibung des Begriffs „Untersuchungszeitpunkt“ teilweise sich selbst und hat somit zu Mehrdeutigkeiten geführt. (Konkret stand „Zeitpunkt des Beginns der Untersuchung/Messung“ im Widerspruch zur ebenfalls erwähnten FHIR-ITEM-Beschreibung „Zeitpunkt zumde die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach“.)
+Der klinische Bezugszeitpunkt wird in der klinischen Praxis am ehesten verwendet, um mehrere Analysen des gleichen Laborparameters chronologisch zu ordnen (z.B. bei Darstellung von Werteverläufen).  
+
+[^1]: In Version 1.0.6 von 2021 widersprach die Beschreibung des Begriffs „Untersuchungszeitpunkt“ teilweise sich selbst und hat somit zu Mehrdeutigkeiten geführt. (Konkret stand „Zeitpunkt des Beginns der Untersuchung/Messung“ im Widerspruch zur ebenfalls erwähnten FHIR-ITEM-Beschreibung „Zeitpunkt zumde die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach“.)
 Es soll sich beim Untersuchungszeitpunkt aber nicht um den Zeitpunkt des eigentlichen Messvorgangs handeln und ein „Messzeitpunkt“ ist bisher im Modul Laborbefund nicht vorgesehen.
 
 ### Beschreibung - Klinischer Bezugszeitpunkt des Laborbefundes:
