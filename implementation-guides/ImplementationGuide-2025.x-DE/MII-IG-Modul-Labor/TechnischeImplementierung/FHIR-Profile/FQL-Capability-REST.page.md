@@ -1,3 +1,6 @@
+---
+topic: CapabilityRest
+---
 <fql>
 from
 	CapabilityStatement

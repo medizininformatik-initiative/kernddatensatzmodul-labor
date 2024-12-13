@@ -42,7 +42,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 
 <tabs>
     <tab title="Interaktionen"> 
-        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-REST.page.md}}
+        {{page:CapabilityRest}}
     </tab>
     <tab title="Suchparameter">
         {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Search.page.md}}
@@ -64,8 +64,8 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | Patient.meta       | Must-support, jedoch optional         |
 | Observation.identifier       | Observation muss eindeutig identifizierbar sein, keine Vorgaben zur Kodierung, Präferenz: 'LOINC CODE_Befundnummer'|
 | Observation.status       |  Finale & vorläufige Ergebnisse sind zulässig.        |
-| Observation.category       |  LOINC & HL7 Code, weitere Codings erlaubt. <br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. <br>Für Laborgruppen wird auf das ValueSet [Laborgruppe](https://simplifier.net/medizininformatikinitiative-modullabor/laborbereich) verwiesen. Dieses kann optional verwendet werden.|
-| Observation.code       | IPS LOINC ValueSet         |
+| Observation.category       | LOINC & HL7 Code, weitere Codings erlaubt. <br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. <br>Für Laborgruppen wird auf das ValueSet {{pagelink:Terminologien, text:Laborgruppe}} verwiesen. Dieses kann optional verwendet werden.|
+| Observation.code       | IPS LOINC ValueSet; Zum Teil kann es Sinn machen, zusätzlich zum LOINC den lokalen Bezeichner-Code zu hinterlegen (siehe Terminologien > LOINC-Kodierung am Standort).        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein. |
 | Observation.effective[x] | Zeitpunkt des Beginns der Untersuchung/Messung. Zeitpunkt sollte als dateTime kodiert werden, siehe mii-lab-1 Constraint. Der klinische Bezugszeitpunkt sollte jedoch entweder auf Basis von Specimen.collection.collected[x] oder DiagnosticReport.effective[x] ermittelt werden. Nur diese Werte entsprechen dem Zeitpunkt zumde die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. |
 | Observation.valueQuantity      | UCUM Quantity - verpflichtend, keine abweichende Kodierung zugelassen.|
