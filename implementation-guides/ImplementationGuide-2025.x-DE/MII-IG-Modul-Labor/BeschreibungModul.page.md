@@ -15,7 +15,7 @@ Laborbefunde sind als Dokumente zusammengefasste in einem medizinischen Labor du
 
 ## Wichtige Zeitpunkte im Laborbefund
 
-Für eine tabellarische Übersicht samt Zuordnung zu den entsprechenden FHIR-Items siehe innerhalb dieses Implementation Guides: {{pagelink:MII-IG-Modul-Laborbefund/TechnischeImplementierung/ZeitpunkteImLabor.md}}
+Für eine tabellarische Übersicht samt Zuordnung zu den entsprechenden FHIR-Items siehe innerhalb dieses Implementation Guides: {{pagelink:ZeitpunkteImLabor}}
 
 Im Verlauf einer Laboranalyse, von der Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender, können verschiedene reelle Zeitpunkte für die Interpretation relevant werden. Viele dieser Zeitpunkte sind in medizinischen Laboren automatisiert und in hoher Qualität in entsprechenden Zeitstempeln dokumentiertx, während manche Zeitstempel aufgrund von z.B. manueller Dokumentation nur ein grobes Surrogat für die reellen Zeitpunkte sein können.
 
