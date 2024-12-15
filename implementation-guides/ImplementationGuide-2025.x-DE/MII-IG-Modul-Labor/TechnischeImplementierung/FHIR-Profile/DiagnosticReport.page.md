@@ -41,14 +41,14 @@ from StructureDefinition where url = %canonical for differential.element.constra
 ### RestFul API
 
 <tabs>
-    <tab title="Interaktionen"> 
-        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-REST.page.md}}
+        <tab title="Interaktionen"> 
+        {{page:FQL-Capability-REST}}
     </tab>
     <tab title="Suchparameter">
-        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Search.page.md}}
+        {{page:FQL-Capability-Search}}
     </tab>
     <tab title="Operationen">
-        {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Operations.page.md}}
+        {{page:FQL-Capability-Operations}}
     </tab>
     <tab title="Link">
     <!-- Achtung: Link muss noch händisch gesetzt werden, hier funktioniert der Platzhalter %capability nicht!-->

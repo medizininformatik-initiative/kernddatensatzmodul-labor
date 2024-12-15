@@ -3,14 +3,14 @@ topic: FQL-Capability-REST
 ---
 <fql>
 from
-	CapabilityStatement
+    CapabilityStatement
 where
-	url = %capability
-	where rest.resource.type = %resType 
-for  rest.resource.interaction
+    url = %capability
+    for rest.resource.where(supportedProfile.startsWith(%canonical)).interaction
 select
 {
-    Interaktion: code,
-    Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+     Interaktion: code,
+     Hinweise: documentation,
+     Verbindlichkeit: extension(’http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 }
 </fql>

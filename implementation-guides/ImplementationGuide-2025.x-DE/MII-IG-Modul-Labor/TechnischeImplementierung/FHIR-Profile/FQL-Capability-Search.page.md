@@ -3,10 +3,15 @@ topic: FQL-Capability-Search
 ---
 <fql>
 from
-	CapabilityStatement
+    CapabilityStatement
 where
-	url = %capability
-	where rest.resource.type = %resType
-		for rest.resource.searchParam  
-			select Parameter: name, Typ: type, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+    url = %capability
+    for rest.resource.where(supportedProfile.startsWith(%canonical)).searchParam
+select
+{
+    Parameter: name,
+		Typ: type,
+    Hinweise: documentation,
+    Verbindlichkeit: extension(’http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+}
 </fql>

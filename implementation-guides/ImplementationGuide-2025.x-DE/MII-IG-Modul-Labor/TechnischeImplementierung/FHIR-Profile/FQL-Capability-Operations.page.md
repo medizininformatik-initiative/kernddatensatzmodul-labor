@@ -3,10 +3,15 @@ topic: FQL-Capability-Operations
 ---
 <fql>
 from
-	CapabilityStatement
+    CapabilityStatement
 where
-	url = %capability
-	where rest.resource.type = %resType 
-		for rest.resource.operation  
-			select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
-</fql> 
+    url = %capability
+    for rest.resource.where(supportedProfile.startsWith(%canonical)).operation
+select
+{
+    Name: name,
+		Spezifikation: definition,
+		Verbindlichkeit: extension(’http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+}
+</fql>
+ 
