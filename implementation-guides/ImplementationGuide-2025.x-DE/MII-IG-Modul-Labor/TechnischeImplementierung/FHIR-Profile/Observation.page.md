@@ -29,7 +29,7 @@ select
   <tab title="Link">{{link}}</tab>
 </tabs>
 
-<br>
+</br>
 
 ### Constraints/Invarianten
 <fql headers="true">
@@ -62,7 +62,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | Patient.meta       | Must-support, jedoch optional         |
 | Observation.identifier       | Observation muss eindeutig identifizierbar sein, keine Vorgaben zur Kodierung, Präferenz: 'LOINC CODE_Befundnummer'|
 | Observation.status       |  Finale & vorläufige Ergebnisse sind zulässig.        |
-| Observation.category       | LOINC & HL7 Code, weitere Codings erlaubt. <br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. <br>Für Laborgruppen wird auf das ValueSet {{pagelink:Terminologien, text:Laborgruppe}} verwiesen. Dieses kann optional verwendet werden.|
+| Observation.category       | LOINC & HL7 Code, weitere Codings erlaubt. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet {{pagelink:Terminologien, text:Laborgruppe}} verwiesen. Dieses kann optional verwendet werden.|
 | Observation.code       | IPS LOINC ValueSet; Zum Teil kann es Sinn machen, zusätzlich zum LOINC den lokalen Bezeichner-Code zu hinterlegen (siehe Terminologien > LOINC-Kodierung am Standort).        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein. |
 | Observation.effective[x] | Zeitpunkt des Beginns der Untersuchung/Messung. Zeitpunkt sollte als dateTime kodiert werden, siehe mii-lab-1 Constraint. Der klinische Bezugszeitpunkt sollte jedoch entweder auf Basis von Specimen.collection.collected[x] oder DiagnosticReport.effective[x] ermittelt werden. Nur diese Werte entsprechen dem Zeitpunkt zumde die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. |
@@ -74,7 +74,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | Observation.referenceRange      | Sollte - falls vorhanden - als high, low (SimpleQuantity) kodiert werden. Abweichend ansonsten per referenceRange.text.|
 | Observation.component | Observation.hasMember ist im Bereich der klinischen Chemie zu bevorzugen (passendere Semantik). Element ist für die Harmonisierung mit Genetischen Befunden erlaubt. |
 
-<br>
+</br>
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -92,7 +92,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | Observation.method       | Laborbefund.Laboruntersuchung.Untersuchungsmethode|
 | Observation.referenceRange       | Laborbefund.Laboruntersuchung.Referenzbereich |
 
-<br>
+</br>
 
 **Beispiele**
 

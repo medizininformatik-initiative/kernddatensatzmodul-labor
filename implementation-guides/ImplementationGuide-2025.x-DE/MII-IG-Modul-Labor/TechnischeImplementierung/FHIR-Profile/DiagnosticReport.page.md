@@ -29,7 +29,7 @@ select
   <tab title="Link">{{link}}</tab>
 </tabs>
 
-<br>
+</br>
 
 ### Constraints/Invarianten
 <fql headers="true">
@@ -71,7 +71,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | DiagnosticReport.result       | DiagnosticReport sollte min. ein Ergebnis in Form eines Laborergebnisses enthalten|
 | DiagnosticReport.conclusion       | Optional, Textuelle Beschreibung der abschließenden ärztlichen Bewertung des Befundes|
 
-<br>
+</br>
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|

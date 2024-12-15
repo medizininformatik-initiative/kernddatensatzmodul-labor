@@ -29,7 +29,7 @@ select
   <tab title="Link">{{link}}</tab>
 </tabs>
 
-<br>
+</br>
 
 ### Constraints/Invarianten
 <fql headers="true">
@@ -69,7 +69,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | ServiceRequest.authoredOn       |  Erstelldatum der Anforderung, falls nicht vorhanden Eingangsdatum der Anforderung        |
 | ServiceRequest.specimen       | Optionale Referenz, zukünftige Spezifikationen weiterer Kerndatensatzmodule können diesbezüglich Vorgaben ausgestalten.|
 
-<br>
+</br>
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|

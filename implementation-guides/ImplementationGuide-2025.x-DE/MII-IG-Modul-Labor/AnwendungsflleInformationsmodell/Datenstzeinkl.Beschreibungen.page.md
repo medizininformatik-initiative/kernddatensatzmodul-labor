@@ -17,7 +17,7 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 | Laborbefund.KlinischesBezugszeitpunkt | Identisch zu Laborbefund.KlinischesBezugsdatum, jedoch konnte im FHIR Logical Model der Name "Laborbefund.Klinisches/r Bezugsdatum/-zeitpunkt nicht abgebildelt werden (Constraint in ElementDefinition.path erlaubt '/' nicht), sodass das Elemente aufgeteilt werden musste."|
 | Laborbefund.Dokumentationsdatum     |  Zeitpunkt, an dem der Laborbefund dokumentiert (verifiziert und freigegeben) wurde. |
 
-<br><br>
+</br></br>
 
 | Logischer Datensatz | Beschreibung |
 |--------------|-----------|
@@ -28,7 +28,7 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 | Probenmaterial.Koerperstelle     | Lokalisation der Körperstelle am Patienten, an der die Probe entnommen / abgenommen wurde |
 | Probenmaterial.Kommentar     | Freitextlicher Kommentar zur Probe |
 
-<br><br>
+</br></br>
 
 | Logischer Datensatz | Beschreibung |
 |--------------|-----------|
@@ -51,7 +51,7 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 | Laboruntersuchung.Untersuchungsmethode     |  konkrete Untersuchungsmethode, wenn ein verwendeter LOINC-Code für den Laborparameter keine Methode enthält|
 | Laboruntersuchung.Referenzbereich     |  Referenzbereich der Analyse.|
 
-<br><br>
+</br></br>
 
 
 | Logischer Datensatz | Beschreibung |
