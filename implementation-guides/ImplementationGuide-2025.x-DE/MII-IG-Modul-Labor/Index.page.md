@@ -3,16 +3,16 @@ topic: MIIIGModulLaborbefund
 ---
 # Kerndatensatz Modul Laborbefund
 
-| Hinweis | Under Construction! |
+<!-- | Hinweis | Under Construction! |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Laborbefund' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der TMF EV](https://www.medizininformatik-initiative.de/de/basismodule-des-kerndatensatzes-der-mii).|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Laborbefund' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der TMF EV](https://www.medizininformatik-initiative.de/de/basismodule-des-kerndatensatzes-der-mii).| -->
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Laborbefund' der Medizininformatik-Initiative.
 Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 13.12.2024  |
+| Datum   | 15.12.2024  |
 | Version | 2025.0.0 |
 | Status  | active |
 | Realm   | DE          | 
