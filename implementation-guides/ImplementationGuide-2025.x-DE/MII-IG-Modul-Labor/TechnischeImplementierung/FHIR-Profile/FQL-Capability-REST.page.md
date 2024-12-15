@@ -11,6 +11,6 @@ select
 {
      Interaktion: code,
      Hinweise: documentation,
-     Verbindlichkeit: extension(’http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+     Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 }
 </fql>

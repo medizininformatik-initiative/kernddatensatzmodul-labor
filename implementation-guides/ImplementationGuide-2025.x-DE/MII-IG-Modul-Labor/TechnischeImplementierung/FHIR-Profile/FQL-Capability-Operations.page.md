@@ -11,7 +11,7 @@ select
 {
     Name: name,
 		Spezifikation: definition,
-		Verbindlichkeit: extension(’http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
+		Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 }
 </fql>
  
