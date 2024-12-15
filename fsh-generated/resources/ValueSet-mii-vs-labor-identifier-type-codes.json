@@ -24,7 +24,6 @@
     }
   ],
   "experimental": false,
-  "date": "2024-02-05",
   "compose": {
     "include": [
       {

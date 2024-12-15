@@ -18,7 +18,7 @@
   "title": "MII CPS Labor CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-02-05",
+  "date": "2025-12-15",
   "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Labor der Medizininformatik Initiative zu implementieren.",
   "jurisdiction": [
     {
