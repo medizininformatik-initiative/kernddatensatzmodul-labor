@@ -23,9 +23,7 @@ select
 
 <tabs>
   <tab title="Darstellung">{{tree, buttons}}</tab>
-  <tab title="Beschreibung"> 
-    {{page:implementation-guides/ImplementationGuide-2024.x-DE/MII-IG-Modul-Labor/TechnischeImplementierung/FHIR-Profile/FQL-Beschreibung.page.md}}
-  </tab>
+  <tab title="Beschreibung">{{page:FQL-Beschreibung}}</tab>
   <tab title="XML">{{xml}}</tab>
   <tab title="JSON">{{json}}</tab>
   <tab title="Link">{{link}}</tab>
