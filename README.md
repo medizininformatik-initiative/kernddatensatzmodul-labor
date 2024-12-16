@@ -10,7 +10,7 @@ Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Labor
 
 ### Status:
 
-Aktuelle stabile Version: [2025.0.0](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2025.0.0)
+Aktuelle stabile Version: [2025.0.1](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2025.0.1)
 <!-- Reifegrad: -->
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.
