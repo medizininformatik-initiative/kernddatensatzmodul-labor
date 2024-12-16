@@ -2,7 +2,7 @@
 
 ### Version: 2025.0.0
 
-Die Version 2025.0.0 enthält im Vergleich zur Vorversion 1.0.6 von 2021 zum Beispiel1 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der diff-view im Github verwendet werden):
+Die Version 2025.0.0 enthält im Vergleich zur Vorversion 1.0.6 von 2021 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der diff-view im Github verwendet werden):
 
 ### FHIR/Inhaltliche Änderungen:
 
