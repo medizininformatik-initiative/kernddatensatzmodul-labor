@@ -5,7 +5,7 @@
   "id": "mii-vs-labor-order-codes",
   "title": "MII VS Labor Order Codes",
   "description": "Kodierung der Beauftragungen von Laboruntersuchungen",
-  "version": "2025.0.0",
+  "version": "2025.0.2",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes",
   "meta": {
     "profile": [
