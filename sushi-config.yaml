@@ -6,4 +6,4 @@ status: active
 version: 2025.0.2
 dependencies:
   hl7.fhir.uv.ips: 1.1.0
-  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.x
